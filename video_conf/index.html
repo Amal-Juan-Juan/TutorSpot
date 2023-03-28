@@ -32,9 +32,18 @@
             meetingUrl: window.location.href, // Meeting joining url
           },
 
+          screenShareEnabled: true,
+          chatEnabled: true,
+          raiseHandEnabled: true,
+          whiteboardEnabled: true,
           permissions: {
             //  ...other permissions
             canCreatePoll: true,
+            removeParticipant: true,
+            pin: true,
+            endMeeting: true,
+            drawOnWhiteboard: true,
+            toggleWhiteboard: true,
           },
         };
 
