@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	</head>
+	<body>
+        <div class="header">
+            <h1>TutorSpot</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 style="color: #4FFFCA; text-align: center;">Register students.</h1>
+		<div class="register">
+			<form action="register_stud.php" method="post" autocomplete="off">
+				
+				<input type="text" name="stud_name" placeholder="Name of student" id="stud_name" required>
+                <input type="number" name="stud_age" placeholder="Age of student" id="stud_age" required>
+                <input type="number" name="stud_class" placeholder="Class of student" id="stud_class" required>
+                <input type="text" name="stud_gender" placeholder="Gender of student" id="stud_gender" required>          
+                
+				<input type="submit" value="Register">
+			</form>
+		</div>
+	</body>
+</html>
