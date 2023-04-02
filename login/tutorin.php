@@ -52,7 +52,7 @@
                         <h1>Sign in</h1>
                         <input type="email" placeholder="Email" required name="email"/>
                         <input type="password" placeholder="Password" name="password" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$"/>
-                        <a href="../login/tutorin.php" id="tt">Sign in as Tutor</a>
+                        <a href="../login/index.php" id="tt">Sign in as Student</a>
                         <a href="../login/index.php" id="fp">Forgot your password?</a>
                         <button>Sign In</button>
                     </form>
@@ -65,7 +65,7 @@
                             <button class="ghost" id="signIn">Sign In</button>
                         </div>
                         <div class="overlay-panel overlay-right">
-                            <h1>Hello, Friend!</h1>
+                            <h1>Hello, Tutor!</h1>
                             <p>Enter your personal details and start journey with us</p>
                             <button class="ghost" id="signUp">Sign Up</button>
                         </div>
