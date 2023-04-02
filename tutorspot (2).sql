@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 02, 2023 at 11:29 AM
+-- Generation Time: Apr 02, 2023 at 02:01 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -79,36 +79,33 @@ CREATE TABLE `login` (
   `email` varchar(30) NOT NULL,
   `username` varchar(30) NOT NULL,
   `password` varchar(20) NOT NULL,
-  `completed` varchar(20) NOT NULL DEFAULT 'na'
+  `completed` varchar(20) NOT NULL DEFAULT 'na',
+  `ngo` varchar(40) NOT NULL DEFAULT 'na'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `login`
 --
 
-INSERT INTO `login` (`email`, `username`, `password`, `completed`) VALUES
-('aadharsh.s2020@vitstudent.ac.i', 'adf', '213', 'na'),
-('abc@gmail.com', 'abc', 'abc', 'completed'),
-('abcd@gmail.com', 'abcd', '123445', 'na'),
-('adkj@gka', 'sjkd', '1234', 'na'),
-('ads@gmail.com', 'adc', '12345', 'na'),
-('alappattsaadharsh@gmail.com', 'aads', '12334', 'na'),
-('email', 'username', 'password', 'completed'),
-('eqtjoxay@gmail.com', 'wbiso', 'C_0P9\"+gHi', 'na'),
-('fkvowdoe@gmail.com', 'fvznd', '6e\\Wo>`Guy', 'na'),
-('hgufsmau@gmail.com', 'jnvin', '|[:RHcLn^i', 'na'),
-('ijqlyqxp@gmail.com', 'kufrb', 'XCg\"<E#I^a', 'na'),
-('karthik@gmail.com', 'karthik', '12345', 'na'),
-('lkas@dkjq', 'kjawd', '1234', 'na'),
-('lquiwrgq@gmail.com', 'jpyaq', '5p5r7ofA=n', 'na'),
-('lzukglgp@gmail.com', 'tbcdt', 'h!?=edc)[y', 'na'),
-('niattraa@gmail.com', 'ytiip', '<$4:\'k2u^x', 'na'),
-('ofokvxdk@gmail.com', 'geilq', '-Ekg>3E}>L', 'na'),
-('qwerty@gamil.com', 'qwerty', '12345', 'na'),
-('qwhj@asdj', 'axcz', '1234', 'na'),
-('supmpust@gmail.com', 'kldbd', '}a:4p/h:LJ', 'na'),
-('vinita@gmail.com', 'vinita24', '12345', 'completed'),
-('xtckvpbe@gmail.com', 'cjtrk', 'Sv9d=;l_%M', 'na');
+INSERT INTO `login` (`email`, `username`, `password`, `completed`, `ngo`) VALUES
+('aadharsh.s2020@vitstudent.ac.i', 'adf', '213', 'na', 'na'),
+('abc@gmail.com', 'abc', 'abc', 'completed', 'na'),
+('abcd@gmail.com', 'abcd', '123445', 'na', 'na'),
+('adkj@gka', 'sjkd', '1234', 'na', 'na'),
+('ads@gmail.com', 'adc', '12345', 'na', 'na'),
+('alappattsaadharsh@gmail.com', 'aads', '12334', 'na', 'na'),
+('anna@gmail.com', 'aNNa', 'anna123', 'completed', 'na'),
+('cuhhugkh@gmail.com', 'oonvq', 'L\\`gS$vAZl', 'na', 'Ayuda'),
+('dqnzsoyl@gmail.com', 'nlcnv', 'baG;NLpkC|', 'na', 'Ayuda'),
+('hhhgcitm@gmail.com', 'oqloc', 'tb\'5OGx!>O', 'na', 'Ayuda'),
+('iqneqvvo@gmail.com', 'fcsnv', '`k&G{sm/jN', 'na', 'Ayuda'),
+('ixumtaxe@gmail.com', 'mcigh', '%S%5QF~CxU', 'na', 'Ayuda'),
+('lipbacqf@gmail.com', 'ednep', '}38*)p)A+Y', 'na', 'Ayuda'),
+('lmnchizc@gmail.com', 'qeajh', '!^Ldv#1?z7', 'na', 'Ayuda'),
+('pwqougxj@gmail.com', 'orxmm', 'DiaSOF4oNr', 'na', 'Ayuda'),
+('tsmxjhzp@gmail.com', 'ucjoz', '\"oil.B&Y<*', 'na', 'Ayuda'),
+('vinita@gmail.com', 'vinita24', '12345', 'completed', 'na'),
+('womjvrhh@gmail.com', 'itovl', 'x7Y2z;Z*vw', 'na', 'Ayuda');
 
 -- --------------------------------------------------------
 
@@ -145,16 +142,18 @@ CREATE TABLE `studentdetails` (
   `phone` varchar(10) NOT NULL,
   `yearOfStudy` varchar(4) NOT NULL,
   `location` varchar(40) NOT NULL,
-  `university` varchar(300) NOT NULL
+  `university` varchar(300) NOT NULL,
+  `ngo` varchar(40) NOT NULL DEFAULT 'na'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `studentdetails`
 --
 
-INSERT INTO `studentdetails` (`email`, `name`, `age`, `gender`, `phone`, `yearOfStudy`, `location`, `university`) VALUES
-('abc@gmail.com', 'Vinita Kishore Vaswani Rajpal', 20, 'female', '8591121312', '2024', 'Mumbai', 'VIT'),
-('vinita@gmail.com', 'Vinita Kishore Vaswani Rajpal', 20, 'female', '8591121312', '2025', 'Mumbai', 'VIT');
+INSERT INTO `studentdetails` (`email`, `name`, `age`, `gender`, `phone`, `yearOfStudy`, `location`, `university`, `ngo`) VALUES
+('abc@gmail.com', 'Vinita Kishore Vaswani Rajpal', 20, 'female', '8591121312', '2024', 'Mumbai', 'VIT', 'na'),
+('anna@gmail.com', 'Anna Jai Joseph', 20, 'female', '8591121312', '2024', 'Vellore', 'VIT', 'na'),
+('vinita@gmail.com', 'Vinita Kishore Vaswani Rajpal', 20, 'female', '8591121312', '2025', 'Mumbai', 'VIT', 'na');
 
 --
 -- Indexes for dumped tables
