@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 30, 2023 at 08:06 PM
+-- Generation Time: Apr 02, 2023 at 11:29 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -78,24 +78,37 @@ INSERT INTO `courses` (`coursename`, `tutorname`, `duration`, `tutorid`) VALUES
 CREATE TABLE `login` (
   `email` varchar(30) NOT NULL,
   `username` varchar(30) NOT NULL,
-  `password` varchar(20) NOT NULL
+  `password` varchar(20) NOT NULL,
+  `completed` varchar(20) NOT NULL DEFAULT 'na'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `login`
 --
 
-INSERT INTO `login` (`email`, `username`, `password`) VALUES
-('abc@gmail.com', 'abc', 'abc'),
-('ads@gmail.com', 'adc', '12345'),
-('abcd@gmail.com', 'abcd', '123445'),
-('alappattsaadharsh@gmail.com', 'aads', '12334'),
-('aadharsh.s2020@vitstudent.ac.i', 'adf', '213'),
-('adkj@gka', 'sjkd', '1234'),
-('lkas@dkjq', 'kjawd', '1234'),
-('qwhj@asdj', 'axcz', '1234'),
-('qwerty@gamil.com', 'qwerty', '12345'),
-('karthik@gmail.com', 'karthik', '12345');
+INSERT INTO `login` (`email`, `username`, `password`, `completed`) VALUES
+('aadharsh.s2020@vitstudent.ac.i', 'adf', '213', 'na'),
+('abc@gmail.com', 'abc', 'abc', 'completed'),
+('abcd@gmail.com', 'abcd', '123445', 'na'),
+('adkj@gka', 'sjkd', '1234', 'na'),
+('ads@gmail.com', 'adc', '12345', 'na'),
+('alappattsaadharsh@gmail.com', 'aads', '12334', 'na'),
+('email', 'username', 'password', 'completed'),
+('eqtjoxay@gmail.com', 'wbiso', 'C_0P9\"+gHi', 'na'),
+('fkvowdoe@gmail.com', 'fvznd', '6e\\Wo>`Guy', 'na'),
+('hgufsmau@gmail.com', 'jnvin', '|[:RHcLn^i', 'na'),
+('ijqlyqxp@gmail.com', 'kufrb', 'XCg\"<E#I^a', 'na'),
+('karthik@gmail.com', 'karthik', '12345', 'na'),
+('lkas@dkjq', 'kjawd', '1234', 'na'),
+('lquiwrgq@gmail.com', 'jpyaq', '5p5r7ofA=n', 'na'),
+('lzukglgp@gmail.com', 'tbcdt', 'h!?=edc)[y', 'na'),
+('niattraa@gmail.com', 'ytiip', '<$4:\'k2u^x', 'na'),
+('ofokvxdk@gmail.com', 'geilq', '-Ekg>3E}>L', 'na'),
+('qwerty@gamil.com', 'qwerty', '12345', 'na'),
+('qwhj@asdj', 'axcz', '1234', 'na'),
+('supmpust@gmail.com', 'kldbd', '}a:4p/h:LJ', 'na'),
+('vinita@gmail.com', 'vinita24', '12345', 'completed'),
+('xtckvpbe@gmail.com', 'cjtrk', 'Sv9d=;l_%M', 'na');
 
 -- --------------------------------------------------------
 
@@ -117,6 +130,47 @@ CREATE TABLE `materials` (
 INSERT INTO `materials` (`coursename`, `tutorname`, `filename`, `tutorid`) VALUES
 ('Microprocessor', 'Gautham', 'MICRO.pdf', 1001),
 ('PDC', 'Prasanth', 'PDC.pdf', 3001);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `studentdetails`
+--
+
+CREATE TABLE `studentdetails` (
+  `email` varchar(40) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `age` int(3) NOT NULL,
+  `gender` varchar(6) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `yearOfStudy` varchar(4) NOT NULL,
+  `location` varchar(40) NOT NULL,
+  `university` varchar(300) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `studentdetails`
+--
+
+INSERT INTO `studentdetails` (`email`, `name`, `age`, `gender`, `phone`, `yearOfStudy`, `location`, `university`) VALUES
+('abc@gmail.com', 'Vinita Kishore Vaswani Rajpal', 20, 'female', '8591121312', '2024', 'Mumbai', 'VIT'),
+('vinita@gmail.com', 'Vinita Kishore Vaswani Rajpal', 20, 'female', '8591121312', '2025', 'Mumbai', 'VIT');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `login`
+--
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`email`);
+
+--
+-- Indexes for table `studentdetails`
+--
+ALTER TABLE `studentdetails`
+  ADD PRIMARY KEY (`email`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
