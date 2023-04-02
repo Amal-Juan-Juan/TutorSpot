@@ -12,7 +12,7 @@ $city=$_POST['city'];
 $age=$_POST['age'];
 $year=$_POST['year'];
 $uni=$_POST['uni'];
-$sql=mysqli_query($con,"insert into studentdetails values('$email','$name','$age','$gender','$phone','$year','$city','$uni')");
+$sql=mysqli_query($con,"insert into studentdetails values('$email','$name','$age','$gender','$phone','$year','$city','$uni','na')");
 if($sql)
 {
     //if successfull entry in database
