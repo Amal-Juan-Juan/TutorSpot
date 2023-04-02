@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('config.php');
+include('include/config.php');
 if(isset($_POST['submit']))
 {	
 	// echo '<script>"no error till here"</script>';
@@ -32,7 +32,7 @@ if($sql)
                 button: "Ok",
                 timer: 5000
             }).then(function(){
-                window.location="home.php";
+                window.location="tutorhome.php";
             });
         });
     </script>';
@@ -157,7 +157,7 @@ if($sql)
 														<select name="year" class="form-control"
 															placeholder="Enter your year of graduation" required="true">
 															<?php
-																for ($x = 1990; $x <= 2030; $x++) {
+																for ($x = 0; $x <= 75; $x++) {
 															?>
 																<option value="<?php echo $x; ?>"><?php echo $x; ?></option>
 																
