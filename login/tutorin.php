@@ -39,7 +39,7 @@
 
             <div class="reg" id="reg">
                 <div class="form-container sign-up-container">
-                    <form action="register.php" name="register" method="post">
+                    <form action="registert.php" name="register" method="post">
                         <h1>Create Account</h1>
                         <input type="email" placeholder="Email" required name="email"/>
                         <input type="text" placeholder="Username" required name="name"/>
@@ -48,7 +48,7 @@
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
-                    <form action="validation.php" name="login" method="post">
+                    <form action="validationt.php" name="login" method="post">
                         <h1>Sign in</h1>
                         <input type="email" placeholder="Email" required name="email"/>
                         <input type="password" placeholder="Password" name="password" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$"/>

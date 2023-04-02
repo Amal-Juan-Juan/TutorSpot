@@ -22,7 +22,7 @@ session_start();
         $username = mysqli_real_escape_string($con, $username);
       
 
-        $user_check_query = "SELECT * FROM login WHERE email='$email' or username='$username'";
+        $user_check_query = "SELECT * FROM logint WHERE email='$email' or username='$username'";
         $result = mysqli_query($con, $user_check_query);
         $user = mysqli_fetch_assoc($result);
         
@@ -50,17 +50,16 @@ session_start();
     </script>';
           }     
           
-        }
+       }
 
-        else{
-            $query = "INSERT INTO login (email, username, password) 
-  			  VALUES('$email', '$username', '$password')";
+     else{
+            $query = "INSERT INTO logint (email, username, password) VALUES('$email', '$username', '$password')";
   	    mysqli_query($con, $query);
   	    $_SESSION['username'] = $username;
         $_SESSION['email']=$email;
         $_SESSION['password']=$password;  
 
-        // header("Location: ../student/home.php");
+        // header("Location: ../student/home.php")
         echo '<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript">
@@ -73,7 +72,7 @@ session_start();
                 button: "Ok",
                 timer: 5000
             }).then(function(){
-                window.location="index.php";
+                window.location="tutorin.php";
             });
         });
     </script>';
