@@ -23,7 +23,7 @@ if($value=="na"){
     <ul>
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="studentprofile.php">Profile</a></li>
-      <li><a href="courses.php">Courses</a></li>
+      <li><a href="createcourse.php">Courses</a></li>
       <li><a href="#about">Classes</a></li>
       <li><a href="#about">Chat</a></li>
       <li><a href="#about">Quiz</a></li>
@@ -61,7 +61,7 @@ if($value=="na"){
           </p>
         </div>
         <div class="button">
-          <a href="courses.php"><button class="button1">Create Course</button></a>
+          <a href="createcourse.php"><button class="button1">Create Course</button></a>
         </div>
       </div>
       <div class="image1">
