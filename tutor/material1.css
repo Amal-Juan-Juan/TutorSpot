@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #4CAF50;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.formdiv {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid white;
+}
+
+.inputf {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+}
+
+#subm {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.logout:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+  
