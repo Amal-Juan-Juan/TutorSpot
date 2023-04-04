@@ -56,5 +56,13 @@ session_start();
             
            
         }
+     if (substr($email, -18) == "@tutorspot.ngo.com") {
+    // Redirect to dashboard
+            header("Location: ../NGO/dashboard.html");
+            exit();
+    } else {
+  // Display error message
+    echo "Invalid email address.";
+    }
         
 ?>
