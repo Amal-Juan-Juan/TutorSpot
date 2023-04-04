@@ -45,13 +45,13 @@ if(mysqli_connect_errno()) {
 }   
 if(isset($_POST['submit']))
 {
-  $coursecode=$_POST['coursecode'];
+  $tutorname=$_POST['tutorname'];
+  $tutorid=$_POST['tutorid'];
   $coursename=$_POST['coursename'];
-  $studentregno=$_POST['studentregno'];
-  $studentname=$_POST['studentname'];
+  
   $file_name=$_FILES['pdf_file']['name'];
   $file_tmp=$_FILES['pdf_file']['tmp_name'];
-  $query="select * from material where fname='$file_name';";
+  $query="select * from materials where filename='$file_name';";
   $result1=mysqli_query($con,$query);
   $count=mysqli_num_rows($result1);
   if($count>0)
@@ -63,8 +63,8 @@ Error!Filename is already present
 		</div>';
   }
   else {
-    move_uploaded_file($file_tmp,"materialsfolder/".$file_name);
-    $insert="insert into material(coursecode,coursename,sregno,sname,fname) values('$coursecode','$coursename','$studentregno','$studentname','$file_name');";
+    move_uploaded_file($file_tmp,"../material/".$file_name);
+    $insert="insert into materials(coursename,tutorname,filename,tutorid) values('$coursename','$tutorname','$file_name','$tutorid');";
     $result=mysqli_query($con,$insert);
 			echo '<div id="cont1">
 				<p>
