@@ -27,7 +27,7 @@ if($value=="na"){
       <li><a href="#about">Classes</a></li>
       <li><a href="#about">Chat</a></li>
       <li><a href="#about">Quiz</a></li>
-      <li><a href="materials.php">Materials</a></li>
+      <li><a href="fileupload.php">Materials</a></li>
       <li style="float:right; "><a href="logout.php" class="logout">Logout</a></li>
     </ul>
 
@@ -209,7 +209,7 @@ if($value=="na"){
           </p>
         </div>
         <div class="button">
-          <a href="materials.php"><button class="button1">Upload Materials</button></a>
+          <a href="fileupload.php"><button class="button1">Upload Materials</button></a>
         </div>
       </div>
       <div class="image1">
