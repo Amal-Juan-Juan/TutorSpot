@@ -61,7 +61,7 @@ if($value=="na"){
           </p>
         </div>
         <div class="button">
-          <a href="courses.php"><button class="button1">Register Course</button></a>
+          <a href="courses.php"><button class="button1">Create Course</button></a>
         </div>
       </div>
       <div class="image1">
@@ -101,7 +101,7 @@ if($value=="na"){
           </p>
         </div>
         <div class="button">
-          <a href="#"><button class="button2">Take Class</button></a>
+          <a href="#"><button class="button2">Start Class</button></a>
         </div>
       </div>
     </div>
@@ -175,7 +175,7 @@ if($value=="na"){
           </p>
         </div>
         <div class="button">
-          <a href="#"><button class="button2">Take Quiz</button></a>
+          <a href="#"><button class="button2">Start Quiz</button></a>
         </div>
       </div>
     </div>
@@ -209,7 +209,7 @@ if($value=="na"){
           </p>
         </div>
         <div class="button">
-          <a href="materials.php"><button class="button1">Download Materials</button></a>
+          <a href="materials.php"><button class="button1">Upload Materials</button></a>
         </div>
       </div>
       <div class="image1">
