@@ -22,25 +22,27 @@ session_start();
 <div id="formdiv1" class="formdiv" style="margin-top:10px;"><br />
 		
       <form id="formin" method="post" enctype="multipart/form-data">
-      	<label style="font-size: 30px; color:#17252a;">Name</label>
-        <input style="border: 4px solid #17252a;margin-bottom:20px;" type="text" name="studentname" id="inp1" class="inputf" size="90px" required/><br />
-        <label style="font-size: 30px; color:#17252a;" class="inputl" >Reg_No</label>
-        <input style="border: 4px solid #17252a;margin-bottom:20px;" type="text" name="studentregno" class="inputf" size="90px" placeholder="11XXX0000" required/><br />
-        <label style="font-size: 30px; color:#17252a;" class="inputl">Course Code </label>
-        <input style="border: 4px solid #17252a;margin-bottom:20px;" type="text" name="coursecode" class="inputf" size="90px" placeholder="XXX0000" required/><br />
-        <label style="font-size: 30px; color:#17252a;" class="inputl">Course Name </label>
-        <input style="border: 4px solid #17252a;margin-bottom:20px;" type="text" name="coursename" class="inputf" size="90px" required /><br />
-        <label style="font-size: 30px; color:#17252a;" class="inputl">Chapter Name </label>
-        <input style="border: 4px solid #17252a;margin-bottom:20px;" type="text" class="inputf" size="90px" required/><br />
-        <label style="font-size: 30px; color:#17252a;" class="inputl">Concept </label>
-        <input style="border: 4px solid #17252a;margin-bottom:20px;" type="text" class="inputf" size="90px" required/><br />
-        <label style="font-size: 30px; color:#17252a;" class="inputl">Material </label>
-        <input style="border: 4px solid #17252a;margin-bottom:20px;" type="file" class="inputf" name="pdf_file" accept="application/pdf" ><br>
+      	<label>Tutor Name</label>
+        <input type="text" name="tutorname" id="inp1" class="inputf" size="90px" required/><br />
+        <label class="inputl" >Tutor ID</label>
+        <input type="text" name="tutorid" class="inputf" size="90px" required/><br />
+        <label class="inputl">Course Name</label>
+        <input type="text" name="coursename" class="inputf" size="90px" required/><br />
+        <label class="inputl">Material </label>
+        <input type="file" class="inputf" name="pdf_file" accept="application/pdf" ><br>
 				<input style="font-size: 1.5em" id="subm" type="submit" name="submit" value="Upload">
       </form>
     </div>
 <?php
-$con=mysqli_connect('localhost','root','','softproj');
+$host = "localhost";  
+$user = "root";  
+$password = '';  
+$db_name = "TutorSpot";  
+  
+$con = mysqli_connect($host, $user, $password, $db_name);  
+if(mysqli_connect_errno()) {  
+    die("Failed to connect with MySQL: ". mysqli_connect_error());  
+}   
 if(isset($_POST['submit']))
 {
   $coursecode=$_POST['coursecode'];
