@@ -11,7 +11,7 @@
             <h1>TutorSpot</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -23,10 +23,17 @@
 				
 				<input type="text" name="stud_name" placeholder="Name of student" id="stud_name" required>
                 <input type="number" name="stud_age" placeholder="Age of student" id="stud_age" required>
-                <input type="number" name="stud_class" placeholder="Class of student" id="stud_class" required>
+                <input type="number" name="stud_class" placeholder="Year of study" id="stud_class" required>
                 <input type="text" name="stud_gender" placeholder="Gender of student" id="stud_gender" required>          
-                
+                <input type="text" name="stud_loc" placeholder="Location of student" id="stud_loc" required>          
+
 				<input type="submit" value="Register">
+			</form>
+            <h1>Or</h1>
+            <form action="upload_csv.php" method="post" enctype="multipart/form-data">
+				<label for="csv_file">Upload CSV:</label>
+				<input type="file" name="csv_file" id="csv_file">
+				<input type="submit" value="Upload">
 			</form>
 		</div>
 	</body>

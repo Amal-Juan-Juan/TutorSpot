@@ -3,7 +3,7 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$dbname = "ngo";
+$dbname = "tutorspot";
 
 $conn = mysqli_connect($host, $username, $password, $dbname);
 
@@ -24,12 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $application = mysqli_real_escape_string($conn, $_POST["application"]);
 
   // SQL query to insert data into table
-  $sql = "INSERT INTO registration (ngo_name, cord, email, phone, no_stud, age, application)
+  $sql = "INSERT INTO ngo_registration (ngo_name, cord, email, phone, no_stud, age, application)
   VALUES ('$ngo_name', '$cord', '$email', '$phone', '$no_stud', '$age', '$application')";
 
   if (mysqli_query($conn, $sql)) {
     echo "Registration successful";
-	header("Location: app_conf.html"); 
+	header("Location: ../NGO/app_conf.html"); 
 
   } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
