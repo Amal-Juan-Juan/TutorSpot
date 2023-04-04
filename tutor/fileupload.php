@@ -56,21 +56,21 @@ if(isset($_POST['submit']))
   $count=mysqli_num_rows($result1);
   if($count>0)
   {
-    echo '<div id="cont2">
-<p>
-Error!Filename is already present
-</p>
-		</div>';
+    
+        echo '<script type="text/javascript">
+                    alert("File Already Present");
+            
+            </script>'; 
   }
   else {
     move_uploaded_file($file_tmp,"../material/".$file_name);
     $insert="insert into materials(coursename,tutorname,filename,tutorid) values('$coursename','$tutorname','$file_name','$tutorid');";
     $result=mysqli_query($con,$insert);
-			echo '<div id="cont1">
-				<p>
-				File Uploaded Successfully
-				</p>
-			</div>';
+			
+            echo '<script type="text/javascript">
+                    alert("File Uploaded Successfully");
+            
+            </script>'; 
   }
 }
 ?>
