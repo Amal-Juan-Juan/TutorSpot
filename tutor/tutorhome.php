@@ -28,7 +28,7 @@ if($value=="na"){
       <li><a href="#about">Chat</a></li>
       <li><a href="#about">Quiz</a></li>
       <li><a href="fileupload.php">Materials</a></li>
-      <li style="float:right; "><a href="logout.php" class="logout">Logout</a></li>
+      <li style="float:right; "><a href="../student/logout.php" class="logout">Logout</a></li>
     </ul>
 
     <div class="section" id="course">
