@@ -2,6 +2,7 @@
 <?php session_start();
 include('include/config.php');
 $email=$_SESSION['email'];
+$uname=$_SESSION['username'];
 $sql="select completed from login where email='$email'";
 $result=mysqli_query($con,$sql);
 $row=mysqli_fetch_array($result);

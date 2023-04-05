@@ -73,7 +73,7 @@ a{
     /* align-content: flex-end; */
     align-items: flex-end;
     justify-content: flex-end;
-    left: 10%;
+    left: 30%;
     flex-wrap: wrap;
 
 }
@@ -220,16 +220,7 @@ span {
 	color: #333;
 	font-size: 14px;
 	text-decoration: none;
-	margin: 0 0;
-	padding-top: 5px;
-	margin-bottom: 10px;
-}
-#tt{
-	color: #333;
-	font-size: 14px;
-	text-decoration:underline;
-	padding-top: 5px;
-	margin: 0 0;
+	margin: 15px 0;
 }
 
 button {

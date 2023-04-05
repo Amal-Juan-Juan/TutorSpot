@@ -15,11 +15,11 @@ session_start();
       <li><a class="active" href="#">Materials</a></li>
       <li><a href="tutorhome.php">Home</a></li>
       <li style="float:right; "><a href="../student/logout.php" class="logout">Logout</a></li>
-    </ul>
-    <div class="whole">
-    <div class="section">
-        <h1>Create Course</h1>
-    </div>
+</ul>
+<div class="whole">
+   
+
+    
     <form id="register-form"class="card-form" action="" method="post">
             <input type="hidden" name="id">
           <div class="row">
@@ -57,10 +57,6 @@ session_start();
           </div>
          
         </form>
-        
-
-</div>
-	</div>
 </div>
 <?php
 $host = "localhost";  

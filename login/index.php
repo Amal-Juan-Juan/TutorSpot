@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TutorSpot</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style1.css">
 </head>
 <body>
     <div class="navbar">
@@ -23,7 +23,7 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="index.html">GET COURSES</a></li>
                 <li><a href="index.html">POST CONTENT</a></li>
-                <li><a href="../video_conf/index.html">MEETING ROOM</a></li>
+                <li><a href="../video_conf/index.html" target="_blank">MEETING ROOM</a></li>
                 <li><a href="../NGO/register.html">NGO</a></li>
                 <li><a href="index.html">ABOUT US</a></li>
 

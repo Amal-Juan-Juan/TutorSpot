@@ -30,6 +30,9 @@ session_start();
         $_SESSION['password']=$row['password'];  
            
         header("Location: ../student/home.php");
+            // header("Location: ../student/dashboard.php");
+
+        
        }
                     
         else{

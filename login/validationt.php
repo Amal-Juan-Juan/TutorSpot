@@ -28,8 +28,10 @@ session_start();
         $_SESSION['username']=$row['username'];
         $_SESSION['email']=$row['email'];
         $_SESSION['password']=$row['password'];  
-           
+        
         header("Location: ../tutor/tutorhome.php");
+        // header("Location: ../tutor/dashboard.php");
+
        }
                     
         else{

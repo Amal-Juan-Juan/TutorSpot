@@ -19,24 +19,19 @@
           apiKey: "07da29fa-9b8b-4b15-82d1-c02f4780f447",
           meetingId: "EDTECH_DEMO",
 
-          // redirectOnLeave: "http://localhost/TARP/login/",
+          redirectOnLeave: "https://www.videosdk.live/",
 
           micEnabled: true,
           webcamEnabled: true,
           participantCanToggleSelfWebcam: true,
           participantCanToggleSelfMic: true,
-          theme: "DARK", // DARK || LIGHT || DEFAULT
+
           joinScreen: {
             visible: true, // Show the join screen ?
             title: "Doubt solving session", // Meeting title
             meetingUrl: window.location.href, // Meeting joining url
           },
-          whiteboardEnabled: true,
-          permissions: {
-            // ...
-            drawOnWhiteboard: true,
-            toggleWhiteboard: true,
-          },
+
           permissions: {
             //  ...other permissions
             canCreatePoll: true,
