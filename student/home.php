@@ -36,29 +36,15 @@ if($value=="na"){
       <div class="btcourse">
         <div class="course1">
           <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum! Provident
-            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
-            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
-            error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias
-            eos sapiente officiis modi at sunt excepturi expedita sint? Sed
-            quibusdam recusandae alias error harum maxime adipisci amet laborum.
-            Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates
-            a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius
-            fugit doloribus tenetur fugiat, temporibus enim commodi iusto libero
-            magni deleniti quod quam consequuntur! Commodi minima excepturi
-            repudiandae velit hic maxime doloremque. Quaerat provident commodi
-            consectetur veniam similique ad earum omnis ipsum saepe, voluptas,
-            hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam
-            cupiditate excepturi mollitia maiores labore suscipit quas? Nulla,
-            placeat. Voluptatem quaerat non architecto ab laudantium modi minima
-            sunt esse temporibus sint culpa, recusandae aliquam numquam totam
-            ratione voluptas quod exercitationem fuga. Possimus quis earum
-            veniam quasi aliquam eligendi, placeat qui corporis!
+          Welcome to the TutorSpot! We are thrilled to have you here and offer you access to our vast selection of online courses. With our user-friendly platform, you can easily search and register for courses that align with your interests, goals, and schedule.
+
+Our online course system is designed to provide you with a flexible and convenient way to pursue your education, whether you're looking to enhance your skills, earn a certificate, or complete a degree program. You'll have access to a variety of courses across different disciplines, and our online platform enables you to study from anywhere, at any time.
+
+The registration process is straightforward and easy to follow. Once you create an account, you can browse our course catalog, review course details, and select the courses that fit your schedule and academic goals. You'll also have access to your course materials, assignments, and other resources, all in one place.
+
+Our platform is designed to provide you with a seamless and engaging learning experience. You'll have the opportunity to connect with your instructors and peers, participate in discussions, and receive feedback on your assignments. You can learn at your own pace and take advantage of the many resources available to you.
+
+We're excited to have you as part of our online learning community, and we look forward to helping you achieve your educational aspirations. Let's get started on this journey together!
           </p>
         </div>
         <div class="button">
@@ -76,29 +62,17 @@ if($value=="na"){
       <div class="btclass">
         <div class="class1">
           <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum! Provident
-            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
-            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
-            error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias
-            eos sapiente officiis modi at sunt excepturi expedita sint? Sed
-            quibusdam recusandae alias error harum maxime adipisci amet laborum.
-            Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates
-            a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius
-            fugit doloribus tenetur fugiat, temporibus enim commodi iusto libero
-            magni deleniti quod quam consequuntur! Commodi minima excepturi
-            repudiandae velit hic maxime doloremque. Quaerat provident commodi
-            consectetur veniam similique ad earum omnis ipsum saepe, voluptas,
-            hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam
-            cupiditate excepturi mollitia maiores labore suscipit quas? Nulla,
-            placeat. Voluptatem quaerat non architecto ab laudantium modi minima
-            sunt esse temporibus sint culpa, recusandae aliquam numquam totam
-            ratione voluptas quod exercitationem fuga. Possimus quis earum
-            veniam quasi aliquam eligendi, placeat qui corporis!
+            Welcome to your tutor student portal! We're excited to offer you a personalized learning experience designed to help you reach your academic goals.
+
+Through our portal, you'll have access to a wide range of classes, each taught by experienced and knowledgeable tutors. You'll be able to select classes that fit your interests and needs, and learn at your own pace.
+
+Our classes are designed to be interactive and engaging, with a focus on hands-on learning and real-world applications. You'll have access to a variety of resources, including video lectures, practice exercises, and one-on-one tutoring sessions.
+
+Our tutors are here to support you every step of the way. They'll work with you to identify your strengths and weaknesses, and help you develop the skills and knowledge you need to succeed.
+
+To get the most out of your classes, we recommend that you set goals, stay organized, and be proactive in your learning. Take advantage of the resources available to you, and don't hesitate to reach out to your tutor if you need help.
+
+We're here to help you achieve your full potential and succeed in your academic pursuits. So, are you ready to take the first step on your learning journey? Let's get started!
           </p>
         </div>
         <div class="button">
@@ -110,29 +84,10 @@ if($value=="na"){
       <div class="btchat">
         <div class="chat1">
           <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum! Provident
-            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
-            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
-            error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias
-            eos sapiente officiis modi at sunt excepturi expedita sint? Sed
-            quibusdam recusandae alias error harum maxime adipisci amet laborum.
-            Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates
-            a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius
-            fugit doloribus tenetur fugiat, temporibus enim commodi iusto libero
-            magni deleniti quod quam consequuntur! Commodi minima excepturi
-            repudiandae velit hic maxime doloremque. Quaerat provident commodi
-            consectetur veniam similique ad earum omnis ipsum saepe, voluptas,
-            hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam
-            cupiditate excepturi mollitia maiores labore suscipit quas? Nulla,
-            placeat. Voluptatem quaerat non architecto ab laudantium modi minima
-            sunt esse temporibus sint culpa, recusandae aliquam numquam totam
-            ratione voluptas quod exercitationem fuga. Possimus quis earum
-            veniam quasi aliquam eligendi, placeat qui corporis!
+            Hi there! I'm your tutor chatbot, 
+            ready to help you with your academic goals. 
+            Whether you need help with homework or have questions about a specific subject, 
+            I'm here to guide you. Let's work together to achieve your full potential!
           </p>
         </div>
         <div class="button">
@@ -150,29 +105,13 @@ if($value=="na"){
       <div class="btquiz">
         <div class="quiz1">
           <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum! Provident
-            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
-            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
-            error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias
-            eos sapiente officiis modi at sunt excepturi expedita sint? Sed
-            quibusdam recusandae alias error harum maxime adipisci amet laborum.
-            Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates
-            a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius
-            fugit doloribus tenetur fugiat, temporibus enim commodi iusto libero
-            magni deleniti quod quam consequuntur! Commodi minima excepturi
-            repudiandae velit hic maxime doloremque. Quaerat provident commodi
-            consectetur veniam similique ad earum omnis ipsum saepe, voluptas,
-            hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam
-            cupiditate excepturi mollitia maiores labore suscipit quas? Nulla,
-            placeat. Voluptatem quaerat non architecto ab laudantium modi minima
-            sunt esse temporibus sint culpa, recusandae aliquam numquam totam
-            ratione voluptas quod exercitationem fuga. Possimus quis earum
-            veniam quasi aliquam eligendi, placeat qui corporis!
+            Welcome to our quiz! Get ready to test your knowledge on a variety of topics. 
+            Each question will have multiple choice options for you to choose from. 
+            Be sure to read each question carefully before selecting your answer. 
+            Remember, there's no penalty for guessing, so if you're not sure about an answer, take your best guess. 
+            At the end of the quiz, we'll tally up your score and let you know how you did. 
+            So, without further ado, let's jump right in and see how well you do! 
+            And don't forget to have fun while testing your knowledge.
           </p>
         </div>
         <div class="button">
@@ -184,29 +123,13 @@ if($value=="na"){
       <div class="btmaterial">
         <div class="material1">
           <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum! Provident
-            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
-            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
-            error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias
-            eos sapiente officiis modi at sunt excepturi expedita sint? Sed
-            quibusdam recusandae alias error harum maxime adipisci amet laborum.
-            Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates
-            a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius
-            fugit doloribus tenetur fugiat, temporibus enim commodi iusto libero
-            magni deleniti quod quam consequuntur! Commodi minima excepturi
-            repudiandae velit hic maxime doloremque. Quaerat provident commodi
-            consectetur veniam similique ad earum omnis ipsum saepe, voluptas,
-            hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam
-            cupiditate excepturi mollitia maiores labore suscipit quas? Nulla,
-            placeat. Voluptatem quaerat non architecto ab laudantium modi minima
-            sunt esse temporibus sint culpa, recusandae aliquam numquam totam
-            ratione voluptas quod exercitationem fuga. Possimus quis earum
-            veniam quasi aliquam eligendi, placeat qui corporis!
+            Welcome to your material access portal! Here, you'll be able to access all the resources you need to succeed in your classes. From lecture notes and textbooks to practice quizzes and exams, everything you need is just a few clicks away.
+
+We've designed our material access portal to be user-friendly and intuitive, so you can find what you need quickly and easily. If you have any questions or need help navigating the portal, don't hesitate to reach out to our support team.
+
+We're constantly updating and adding new materials to the portal, so be sure to check back often for the latest resources. Whether you're studying for a big exam or just need a quick reference, we've got you covered.
+
+So, log in and start exploring! We're confident that you'll find everything you need to excel in your classes and achieve your academic goals.
           </p>
         </div>
         <div class="button">
