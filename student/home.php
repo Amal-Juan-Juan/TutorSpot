@@ -56,13 +56,13 @@ if($value=="na"){
           <a href="courses.php"><button class="button">Register Course</button></a>
         </div>
       </div>
-      <div class="image1">
-        <img src="../images/course.jpg" width="700" height="400" />
+      <div class="image-1">
+        <img src="../images/class.jpg" width="700" height="400" />
       </div>
     </div>
     <div class="section" id="class">
-      <div class="image2">
-        <img src="../images/class.png" height="400" width="680" />
+      <div class="image-2">
+        <img src="../images/course.png" height="400" width="680" />
       </div>
       <div class="btclass">
         <div class="class1">
@@ -74,7 +74,7 @@ if($value=="na"){
             We're here to help you achieve your full potential and succeed in your academic pursuits. So, are you ready to take the first step on your learning journey? Let's get started!
           </p>
         </div>
-        <div class="button">
+        <div class="button-r">
           <a href="#"><button class="button">Take Class</button></a>
         </div>
       </div>
@@ -93,12 +93,12 @@ if($value=="na"){
           <a href="#"><button class="button">Chat</button></a>
         </div>
       </div>
-      <div class="image1">
-        <img src="../images/chat.png" width="700" height="400" />
+      <div class="image-1">
+        <img src="../images/chat.png" width="550" height="250" />
       </div>
     </div>
     <div class="section" id="quiz">
-      <div class="image2">
+      <div class="image-2">
         <img src="../images/quiz.jpg" height="400" width="680" />
       </div>
       <div class="btquiz">
@@ -113,7 +113,7 @@ if($value=="na"){
             And don't forget to have fun while testing your knowledge.
           </p>
         </div>
-        <div class="button">
+        <div class="button-r">
           <a href="#"><button class="button">Take Quiz</button></a>
         </div>
       </div>
@@ -132,7 +132,7 @@ if($value=="na"){
           <a href="materials.php"><button class="button">Download Materials</button></a>
         </div>
       </div>
-      <div class="image1">
+      <div class="image-1">
         <img src="../images/book.jpg" width="700" height="400" />
       </div>
     </div>
