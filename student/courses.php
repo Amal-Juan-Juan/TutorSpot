@@ -74,8 +74,9 @@ session_start();
 <br>
 
 <div class="sub">
+  <div class="btn">
 	<input id="submit" type="submit" name="submit" value="Register">
-    </div>
+  </div></div>
     </form>
     </div>
     <?php
