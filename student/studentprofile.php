@@ -32,22 +32,22 @@ $host = "localhost";
       <li style="float:right; "><a href="logout.php" class="logout">Logout</a></li>
     </ul>
     <div class="section">
-        <h1>Profile</h1>
+        <h1 class="profile-heading">Profile Details</h1>
         <table class="profile">
             <tr>
-                <td>Name: </td>
-                <td><?php echo $row['username']?></td>
+                <td>Name :  <?php echo $row['username']?> </td>
+                <!-- <td></td> -->
             </tr>
             <tr>
-                <td>Password: </td>
-                <td><?php echo $row['password']?></td>
+                <td>Password :  <?php echo $row['password']?></td>
+                <!-- <td></td> -->
             </tr>
-                <td>E-Mail:</td>
-                <td><?php echo $row['email']?></td>
+                <td>E-Mail :  <?php echo $row['email']?></td>
+                <!-- <td></td> -->
             </tr>
             <tr>
                 <td>NGO:</td>
-                <td></td>
+                <!-- <td></td> -->
             </tr>
         </table>
 </div>
