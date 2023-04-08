@@ -53,7 +53,7 @@ while($row = mysqli_fetch_array($result)){
     
     $temp=$row['filename'];
     $path='../material/'.$temp;
-    echo "<td><a download='$path' href='$path'>$temp</a></td>";
+    echo "<td><a class='downlink' download='$path' href='$path'>$temp</a></td>";
     echo "</tr>";
 } 
 

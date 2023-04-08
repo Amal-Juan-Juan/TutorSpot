@@ -39,13 +39,8 @@ body {
     transition: background-color 0.3s;
     color: #4FFFCA;
     border-radius: 6px;
-    /* font-weight: bold; */
   }
 
-   /* li a.logout:hover{
-    background-color: red;
-
-  }   */
   
   .active {
     background-color: #454545;
