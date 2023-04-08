@@ -62,7 +62,7 @@ if($value=="na"){
     </div>
     <div class="section" id="class">
       <div class="image2">
-        <img src="../images/class.jpg" height="400" width="680" />
+        <img src="../images/class.png" height="400" width="680" />
       </div>
       <div class="btclass">
         <div class="class1">
