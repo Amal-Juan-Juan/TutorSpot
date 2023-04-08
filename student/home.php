@@ -48,7 +48,7 @@ We're excited to have you as part of our online learning community, and we look 
           </p>
         </div>
         <div class="button">
-          <a href="courses.php"><button class="button1">Register Course</button></a>
+          <a href="courses.php"><button class="button">Register Course</button></a>
         </div>
       </div>
       <div class="image1">
@@ -91,7 +91,7 @@ We're here to help you achieve your full potential and succeed in your academic 
           </p>
         </div>
         <div class="button">
-          <a href="#"><button class="button1">Chat</button></a>
+          <a href="#"><button class="button">Chat</button></a>
         </div>
       </div>
       <div class="image1">
@@ -133,7 +133,7 @@ So, log in and start exploring! We're confident that you'll find everything you 
           </p>
         </div>
         <div class="button">
-          <a href="materials.php"><button class="button1">Download Materials</button></a>
+          <a href="materials.php"><button class="button">Download Materials</button></a>
         </div>
       </div>
       <div class="image1">

@@ -5,7 +5,7 @@ body {
 }
 
 a {
-  color: #0f0;
+  color: #4FFFCA;
   text-decoration: none;
 }
 
@@ -14,7 +14,7 @@ a:hover {
 }
 
 .active {
-  color: #0f0;
+  color: #4FFFCA;
 }
 
 input[type=text] {
@@ -28,7 +28,7 @@ input[type=text] {
 }
 
 input[type=submit] {
-  background-color: #0f0;
+  background-color: #4FFFCA;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -71,7 +71,7 @@ li {
 
 li a {
   display: block;
-  color: #0f0;
+  color: #4FFFCA;
   text-align: center;
   padding: 14px 16px;
 }
@@ -81,12 +81,12 @@ li a {
 }
 
 li a:hover {
-  background-color: #0f0;
+  background-color: #4FFFCA;
   color: #000;
 }
 
 .active {
-  background-color: #0f0;
+  background-color: #4FFFCA;
   color: #000;
 }
 

@@ -1,9 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-  
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  font-size: 16px;
+}
+body {
+  background-color: #454545;
+  margin: 0;
+}
   .section {
     padding: 5em 2em;
   }
@@ -13,7 +16,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: #645F5F;
     
   } 
   
@@ -23,7 +26,7 @@
   
   li a {
     display: block;
-    color: #222831;
+    color: #454545;
     text-align: center;
     padding: 18px 18px;
     text-decoration: none;
@@ -31,7 +34,8 @@
   }
   
   li a:hover:not(.active) {
-    background-color: #c0c5f4;
+    background-color: #2868c7;
+    transition: background-color 0.2s;
   }
 
    li a.logout:hover{
@@ -40,7 +44,7 @@
   }  
   
   .active {
-    background-color: #222831;
+    background-color: #454545;
     color: white;
   }
   
@@ -49,7 +53,7 @@
   }
   
   #course {
-    background-color: #222831;
+    background-color: #454545;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -72,37 +76,32 @@
   }
   
   .button {
-    border: none;
-    color: white;
-    /* padding: 16px 32px; */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 40px;
-    margin: 10px 2px;
-    transition-duration: 0.4s;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #383a39;
+   border: 0;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    padding-left: 40%;
-    padding-top: 5px;
+    font-weight: bold;
+    color: #4FFFCA;
+    transition: background-color 0.2s;
   }
   
   .button1 {
     background-color: white;
-    color: #222831;
+    color: #454545;
     margin: 20px 2px;
     padding: 20px 20px;
   }
   
-  .button1:hover {
-    background-color: #c0c5f4;
-    color: #222831;
+  .button:hover {
+    background-color: #2868c7;
+    transition: background-color 0.2s;
   }
   
   #class {
     background-color: white;
-    color: #222831;
+    color: #454545;
     display: flex;
     justify-content: space-between;
     padding: 50px;
@@ -124,7 +123,7 @@
     padding-left: 30px;
   }
   .button2 {
-    background-color: #222831;
+    background-color: #454545;
     color: white;
     margin: 20px 2px;
     padding: 20px 20px;
@@ -132,11 +131,11 @@
   
   .button2:hover {
     background-color: white;
-    color:#222831;
+    color:#454545;
   }
   
   #chat {
-    background-color: #222831;
+    background-color: #454545;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -153,7 +152,7 @@
   
   #quiz {
     background-color: white;
-    color: #222831;
+    color: #454545;
     display: flex;
     justify-content: space-between;
     padding: 50px;
@@ -168,7 +167,7 @@
   }
   
   #materials {
-    background-color: #222831;
+    background-color: #454545;
     color: white;
     display: flex;
     justify-content: space-between;
