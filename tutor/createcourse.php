@@ -17,7 +17,7 @@ session_start();
       <li style="float:right; "><a href="../student/logout.php" class="logout">Logout</a></li>
 </ul>
 <div class="whole">
-   
+   <h1>Create the Course</h1>
 
     
     <form id="register-form"class="card-form" action="" method="post">

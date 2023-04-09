@@ -69,10 +69,10 @@ body {
 }
 
 .formdiv {
-  width: 50%;
+  width: 70%;
   margin: auto;
   padding: 20px;
-  border: 2px solid #4FFFCA;
+  border: 1px solid #4FFFCA;
   background-color: #383a39;
   color: white;
 }
