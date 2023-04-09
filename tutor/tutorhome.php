@@ -22,7 +22,7 @@ if($value=="na"){
     
     <ul>
       <li><a class="active" href="#home">Home</a></li>
-      <li><a href="studentprofile.php">Profile</a></li>
+      <!-- <li><a href="studentprofile.php">Profile</a></li> -->
       <li><a href="createcourse.php">Courses</a></li>
       <li><a href="#about">Classes</a></li>
       <li><a href="#about">Chat</a></li>
@@ -35,57 +35,47 @@ if($value=="na"){
       <div class="btcourse">
         <div class="course1">
           <p class="content">
-          Welcome to the course creation process! As a tutor, you have the unique opportunity to design and develop a course that reflects your expertise and passion. Creating a course can be a rewarding experience that allows you to share your knowledge and skills with others.
-
-When creating your course, think about your audience and their learning objectives. What do they need to know, and how can you present the material in a way that is engaging and informative? Consider using a variety of teaching methods, including lectures, group activities, and hands-on exercises, to ensure that your course is dynamic and interactive.
-
-As you develop your course content, be sure to organize it in a logical and accessible way. Consider creating a syllabus that outlines the course objectives, reading materials, and assignments. This will help your students stay on track and understand the expectations for the course.
-
-You'll also want to think about the technology and tools you'll need to deliver your course content. This could include creating videos, using online resources, and setting up a virtual classroom. Our team is here to support you and provide you with the resources you need to create a successful course.
+            Welcome to the course creation process! As a tutor, you have the unique opportunity to design and develop a course 
+            that reflects your expertise and passion. 
+            Creating a course can be a rewarding experience that allows you to share your knowledge and skills with others.
+            When creating your course, think about your audience and their learning objectives. 
+            What do they need to know, and how can you present the material in a way that is engaging and informative? 
+            As you develop your course content, be sure to organize it in a logical and accessible way. 
+            Consider creating a syllabus that outlines the course objectives, reading materials, and assignments. 
+            This will help your students stay on track and understand the expectations for the course.
+            You'll also want to think about the technology and tools you'll need to deliver your course content. 
+            This could include creating videos, using online resources, and setting up a virtual classroom. 
+            Our team is here to support you and provide you with the resources you need to create a successful course.
           </p>
         </div>
         <div class="button">
-          <a href="createcourse.php"><button class="button1">Create Course</button></a>
+          <a href="createcourse.php"><button class="button">Create Course</button></a>
         </div>
       </div>
-      <div class="image1">
-        <img src="../images/course.jpg" width="700" height="400" />
+      <div class="image-1">
+        <img src="../images/class.jpg" width="650" height="380" />
       </div>
     </div>
     <div class="section" id="class">
-      <div class="image2">
-        <img src="../images/class.jpg" height="400" width="680" />
+      <div class="image-1">
+        <img src="../images/course.png" height="400" width="680" />
       </div>
       <div class="btclass">
         <div class="class1">
           <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum! Provident
-            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
-            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
-            error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias
-            eos sapiente officiis modi at sunt excepturi expedita sint? Sed
-            quibusdam recusandae alias error harum maxime adipisci amet laborum.
-            Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates
-            a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius
-            fugit doloribus tenetur fugiat, temporibus enim commodi iusto libero
-            magni deleniti quod quam consequuntur! Commodi minima excepturi
-            repudiandae velit hic maxime doloremque. Quaerat provident commodi
-            consectetur veniam similique ad earum omnis ipsum saepe, voluptas,
-            hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam
-            cupiditate excepturi mollitia maiores labore suscipit quas? Nulla,
-            placeat. Voluptatem quaerat non architecto ab laudantium modi minima
-            sunt esse temporibus sint culpa, recusandae aliquam numquam totam
-            ratione voluptas quod exercitationem fuga. Possimus quis earum
-            veniam quasi aliquam eligendi, placeat qui corporis!
+          Welcome to our "Start a Class" option for tutors! 
+          This tool allows you to create and manage your own classes, and provide your students 
+          with a personalized and engaging learning experience.
+          With our "Start a Class" option, you can choose the subject matter, set the schedule, and tailor 
+          the course material to meet the needs of your students.
+          To get started, simply select the subject you'd like to teach, and follow the step-by-step instructions 
+          to create your class.
+          We're committed to providing you with the tools you need to be an effective tutor, and we're confident 
+          that our "Start a Class" option will help you achieve your goals.
           </p>
         </div>
-        <div class="button">
-          <a href="#"><button class="button2">Start Class</button></a>
+        <div class="button-r">
+          <a href="#"><button class="button">Start Class</button></a>
         </div>
       </div>
     </div>
@@ -93,37 +83,23 @@ You'll also want to think about the technology and tools you'll need to deliver 
       <div class="btchat">
         <div class="chat1">
           <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum! Provident
-            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
-            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
-            error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias
-            eos sapiente officiis modi at sunt excepturi expedita sint? Sed
-            quibusdam recusandae alias error harum maxime adipisci amet laborum.
-            Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates
-            a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius
-            fugit doloribus tenetur fugiat, temporibus enim commodi iusto libero
-            magni deleniti quod quam consequuntur! Commodi minima excepturi
-            repudiandae velit hic maxime doloremque. Quaerat provident commodi
-            consectetur veniam similique ad earum omnis ipsum saepe, voluptas,
-            hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam
-            cupiditate excepturi mollitia maiores labore suscipit quas? Nulla,
-            placeat. Voluptatem quaerat non architecto ab laudantium modi minima
-            sunt esse temporibus sint culpa, recusandae aliquam numquam totam
-            ratione voluptas quod exercitationem fuga. Possimus quis earum
-            veniam quasi aliquam eligendi, placeat qui corporis!
+          Welcome to our tutor chatbot! 
+          Our chatbot is designed to help you quickly and easily find the information 
+          you need to enhance your tutoring skills and support your students.
+          With our chatbot, you can ask questions about a variety of topics, including teaching 
+          strategies, subject matter, and student engagement.
+          Our goal is to provide you with fast and accurate answers, so you can focus on what 
+          matters most - helping your students succeed.
+          So, don't hesitate to ask our chatbot any questions you may have. 
+          We're here to help!
           </p>
         </div>
         <div class="button">
-          <a href="#"><button class="button1">Chat</button></a>
+          <a href="#"><button class="button">Chat</button></a>
         </div>
       </div>
-      <div class="image1">
-        <img src="../images/chat.png" width="700" height="400" />
+      <div class="image-1">
+        <img src="../images/chat.png" width="550" height="250" />
       </div>
     </div>
     <div class="section" id="quiz">
@@ -133,33 +109,20 @@ You'll also want to think about the technology and tools you'll need to deliver 
       <div class="btquiz">
         <div class="quiz1">
           <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum! Provident
-            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
-            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
-            error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias
-            eos sapiente officiis modi at sunt excepturi expedita sint? Sed
-            quibusdam recusandae alias error harum maxime adipisci amet laborum.
-            Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates
-            a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius
-            fugit doloribus tenetur fugiat, temporibus enim commodi iusto libero
-            magni deleniti quod quam consequuntur! Commodi minima excepturi
-            repudiandae velit hic maxime doloremque. Quaerat provident commodi
-            consectetur veniam similique ad earum omnis ipsum saepe, voluptas,
-            hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam
-            cupiditate excepturi mollitia maiores labore suscipit quas? Nulla,
-            placeat. Voluptatem quaerat non architecto ab laudantium modi minima
-            sunt esse temporibus sint culpa, recusandae aliquam numquam totam
-            ratione voluptas quod exercitationem fuga. Possimus quis earum
-            veniam quasi aliquam eligendi, placeat qui corporis!
+          Welcome to our quiz maker for tutors! 
+          With this tool, you can create custom quizzes to help your students test 
+          their knowledge and reinforce their learning.
+          Our quiz maker is user-friendly and intuitive, and it allows you to customize 
+          your quizzes with a variety of question types and formats.
+          To get started, simply select the subject and difficulty level you'd like to 
+          create a quiz for, and follow the step-by-step instructions to add your questions 
+          and answers.
+          We're confident that you'll find our quiz maker to be a valuable tool for 
+          enhancing your tutoring sessions and helping your students succeed.
           </p>
         </div>
-        <div class="button">
-          <a href="#"><button class="button2">Start Quiz</button></a>
+        <div class="button-r">
+          <a href="#"><button class="button">Start Quiz</button></a>
         </div>
       </div>
     </div>
@@ -167,33 +130,18 @@ You'll also want to think about the technology and tools you'll need to deliver 
       <div class="btmaterial">
         <div class="material1">
           <p class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-            fugiat iusto fuga praesentium optio, eaque rerum! Provident
-            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
-            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
-            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
-            error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias
-            eos sapiente officiis modi at sunt excepturi expedita sint? Sed
-            quibusdam recusandae alias error harum maxime adipisci amet laborum.
-            Perspiciatis minima nesciunt dolorem! Officiis iure rerum voluptates
-            a cumque velit quibusdam sed amet tempora. Sit laborum ab, eius
-            fugit doloribus tenetur fugiat, temporibus enim commodi iusto libero
-            magni deleniti quod quam consequuntur! Commodi minima excepturi
-            repudiandae velit hic maxime doloremque. Quaerat provident commodi
-            consectetur veniam similique ad earum omnis ipsum saepe, voluptas,
-            hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam
-            cupiditate excepturi mollitia maiores labore suscipit quas? Nulla,
-            placeat. Voluptatem quaerat non architecto ab laudantium modi minima
-            sunt esse temporibus sint culpa, recusandae aliquam numquam totam
-            ratione voluptas quod exercitationem fuga. Possimus quis earum
-            veniam quasi aliquam eligendi, placeat qui corporis!
+          Welcome to our material upload feature for tutors! 
+          This tool allows you to easily upload and share teaching materials with your students.
+          With our material upload feature, you can share a variety of materials, including lecture notes, 
+          practice exercises, and reading assignments.
+          To get started, simply select the class and topic you'd like to upload materials for, and follow 
+          the instructions to add your files.
+          We're committed to providing you with the tools you need to enhance your tutoring sessions, 
+          and we're confident that our material upload feature will help you do just that.
           </p>
         </div>
         <div class="button">
-          <a href="fileupload.php"><button class="button1">Upload Materials</button></a>
+          <a href="fileupload.php"><button class="button">Upload Materials</button></a>
         </div>
       </div>
       <div class="image1">

@@ -1,9 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
-  
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  font-size: 16px;
+}
+body {
+  background-color: #454545;
+  margin: 0;
+}
   .section {
     padding: 5em 2em;
   }
@@ -13,7 +16,8 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: #645F5F;
+    color: white;
     
   } 
   
@@ -23,7 +27,7 @@
   
   li a {
     display: block;
-    color: #222831;
+    color: white;
     text-align: center;
     padding: 18px 18px;
     text-decoration: none;
@@ -31,16 +35,15 @@
   }
   
   li a:hover:not(.active) {
-    background-color: #c0c5f4;
+    background-color: #4545459a;
+    transition: background-color 0.3s;
+    color: #4FFFCA;
+    border-radius: 6px;
   }
 
-   li a.logout:hover{
-    background-color: red;
-
-  }  
   
   .active {
-    background-color: #222831;
+    background-color: #454545;
     color: white;
   }
   
@@ -49,7 +52,7 @@
   }
   
   #course {
-    background-color: #222831;
+    background-color: #454545;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -59,11 +62,15 @@
     width: auto;
   }
   
-  .image1 {
+  /* .image{
+    border-radius: 80%;
+  } */
+
+  .image-1 {
     height: auto;
     float: right;
     padding-left: 30px;
-    /* float: right; */
+    border-radius: 80%;
   }
   
   .course1 {
@@ -72,37 +79,64 @@
   }
   
   .button {
-    border: none;
-    color: white;
-    /* padding: 16px 32px; */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 40px;
-    margin: 10px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    padding-left: 40%;
-    padding-top: 5px;
+  align-items: center;
+  background-color: initial;
+  background-image: linear-gradient(#5d5858, #393838);
+  border-radius: 8px;
+  border-width: 0;
+  box-shadow: rgba(0, 0, 0, .1), rgba(0, 0, 0, .05);
+  box-sizing: border-box;
+  color: #4FFFCA;
+  cursor: pointer;
+  display: inline-block;
+  /* flex-direction: column; */
+  font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 18px;
+  height: 52px;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all 150ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 1, 0, 0.304) ;
+  opacity: .85;
+}
+
+.button:active {
+  outline: 0;
+}
+
+.button:focus {
+  box-shadow: rgba(0, 0, 0, .5) 0 0 0 ;
+}
+
+@media (max-width: 420px) {
+  .button {
+    height: 48px;
   }
+}
   
-  .button1 {
-    background-color: white;
-    color: #222831;
-    margin: 20px 2px;
-    padding: 20px 20px;
-  }
-  
-  .button1:hover {
-    background-color: #c0c5f4;
-    color: #222831;
+  .button-r{
+  margin: 20px 2px;
+  padding: 20px 20px;
   }
   
   #class {
-    background-color: white;
-    color: #222831;
+    background-color: #645F5F;
+    color: white;
     display: flex;
     justify-content: space-between;
     padding: 50px;
@@ -111,7 +145,7 @@
     width: auto;
   }
   
-  .image2 {
+  .image-2 {
     height: auto;
   
     float: left;
@@ -123,8 +157,8 @@
     float: right;
     padding-left: 30px;
   }
-  .button2 {
-    background-color: #222831;
+  /* .button2 {
+    background-color: #454545;
     color: white;
     margin: 20px 2px;
     padding: 20px 20px;
@@ -132,11 +166,11 @@
   
   .button2:hover {
     background-color: white;
-    color:#222831;
-  }
+    color:#454545;
+  } */
   
   #chat {
-    background-color: #222831;
+    background-color: #454545;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -148,12 +182,12 @@
   
   .chat1 {
     float: left;
-    padding-right: 10px;
+    padding-right: 80px;
   }
   
   #quiz {
-    background-color: white;
-    color: #222831;
+    background-color: #645F5F;
+    color: white;
     display: flex;
     justify-content: space-between;
     padding: 50px;
@@ -168,7 +202,7 @@
   }
   
   #materials {
-    background-color: #222831;
+    background-color: #454545;
     color: white;
     display: flex;
     justify-content: space-between;
