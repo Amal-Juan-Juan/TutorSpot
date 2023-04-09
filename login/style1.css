@@ -9,11 +9,11 @@ html, body {
     /* background-image: url('images/16221731186022243-FeatBlueWhiteBackground.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #222831;
+    background-color: #454545;
 }
 .mainbody{
 	display: block;
-	background-image: linear-gradient(to right , #3ec3d9 85%, white  0%);
+	background-image: linear-gradient(to right , #4FFFCA 85%, white  0%);
 
 }
 a{
@@ -31,7 +31,7 @@ a{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
 	animation: slide-down 0.5s linear 1;
-    background-color: #222831;
+    background-color: #645F5F;
 
 
 }
@@ -101,7 +101,7 @@ a{
 .links li a:hover{
     font-size: 24px;
     color: #EEEEEE;
-    color: #3ec3d9;
+    color: #4FFFCA;
     /* color: #00ADB5; */
 
 }
@@ -225,8 +225,8 @@ span {
 
 button {
 	border-radius: 20px;
-	border: 1px solid #0F3D3E;
-	background-color: #2b4949;
+	border: 1px solid #3dc79d;
+	background-color: #33aa86cc;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -343,10 +343,10 @@ input {
 }
 
 .overlay {
-	background: #395B64;
+	background: #4fffcae1;
 	
 	/* background: linear-gradient(to right, #0F3D3E, #FF416C); */
-	background: linear-gradient(to right, #060d2ddf, #08c8d23d);
+	background: linear-gradient(to right, #454545, #3dbf98);
 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -409,6 +409,6 @@ input {
     font-size: 58px;
     /* font-style: italic; */
     font-weight: 450;
-    color: #08c9d6;
+    color: #4FFFCA;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
