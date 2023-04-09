@@ -217,10 +217,11 @@ span {
 }
 
 #fp {
-	color: #333;
+	color: #ffffff;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
+	background-color: #645F5F;
 }
 
 button {
@@ -246,11 +247,11 @@ button:focus {
 
 button.ghost {
 	background-color: transparent;
-	border-color: #FFFFFF;
+	/* border-color: #FFFFFF; */
 }
 
 form {
-	background-color: #FFFFFF;
+	background-color: #645F5F;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -258,10 +259,12 @@ form {
 	padding: 0 50px;
 	height: 100%;
 	text-align: center;
+	color: #fff;
 }
 
 input {
-	background-color: #eee;
+	background-color: #45454584;
+	color: #fff;
 	border: none;
 	padding: 12px 15px;
 	margin: 8px 0;
@@ -269,7 +272,7 @@ input {
 }
 
 .reg {
-	background-color: #fff;
+	background-color: transparent;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
@@ -289,16 +292,19 @@ input {
 	top: 0;
 	height: 100%;
 	transition: all 0.6s ease-in-out;
+	border-radius: 10px;
 }
 
 .sign-in-container {
 	left: 0;
 	width: 50%;
 	z-index: 2;
+	border-radius: 10px;
 }
 
 .reg.right-panel-active .sign-in-container {
 	transform: translateX(100%);
+	border-radius: 10px;
 }
 
 .sign-up-container {
@@ -306,6 +312,7 @@ input {
 	width: 50%;
 	opacity: 0;
 	z-index: 1;
+	border-radius: 10px;
 }
 
 .reg.right-panel-active .sign-up-container {
@@ -313,6 +320,7 @@ input {
 	opacity: 1;
 	z-index: 5;
 	animation: show 0.6s;
+	border-radius: 10px;
 }
 
 @keyframes show {
@@ -336,17 +344,19 @@ input {
 	overflow: hidden;
 	transition: transform 0.6s ease-in-out;
 	z-index: 100;
+	border-radius: 10px;
 }
 
 .reg.right-panel-active .overlay-container{
 	transform: translateX(-100%);
+	border-radius: 10px;
 }
 
 .overlay {
 	background: #4fffcae1;
 	
 	/* background: linear-gradient(to right, #0F3D3E, #FF416C); */
-	background: linear-gradient(to right, #454545, #3dbf98);
+	background: linear-gradient(to right, #389176, #3dbf98);
 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -358,6 +368,7 @@ input {
 	width: 200%;
   	transform: translateX(0);
 	transition: transform 0.6s ease-in-out;
+	border-radius: 10px;
 }
 
 .reg.right-panel-active .overlay {
