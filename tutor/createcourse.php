@@ -40,6 +40,10 @@ session_start();
                       
                       <input type="text" onkeypress="myfun()"  class="input-field" placeholder="Tutor ID" reqiured="" name="tutorid" id="tutorid">
                   </div>
+                  <div class="input">
+                      
+                      <input type="text" onkeypress="myfun()"  class="input-field" placeholder="Tutor Email" reqiured="" name="email" id="email">
+                  </div>
               
               <div>
                 <p  id="file_name"></p>
@@ -74,8 +78,8 @@ if(isset($_POST['btn-course']))
   $tutorname=$_POST['tutorname'];
   $duration=$_POST['duration'];
   $tutorid=$_POST['tutorid'];
-  
-  $query="insert into courses values('$coursename','$tutorname','$duration','$tutorid');";
+  $tutormail=$_POST['email'];
+  $query="insert into courses values('$coursename','$tutorname','$duration','$tutorid','$tutormail');";
   $result1=mysqli_query($con,$query);
   if($result1)
   {
