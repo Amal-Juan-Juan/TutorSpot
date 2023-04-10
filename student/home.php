@@ -32,7 +32,7 @@ if($value=="na"){
       <li style="float:right; "><a href="logout.php" class="logout">Logout</a></li>
     </ul>
 
-    <div class="section" id="course">
+    <div class="section w3-animate-fading" id="course">
       <div class="btcourse">
         <div class="course1">
           <p class="content">
@@ -56,14 +56,8 @@ if($value=="na"){
           <a href="courses.php"><button class="button">Register Course</button></a>
         </div>
       </div>
-      <div class="image-1">
-        <img src="../images/class.jpg" width="700" height="400" />
-      </div>
     </div>
-    <div class="section" id="class">
-      <div class="image-2">
-        <img src="../images/course.png" height="400" width="680" />
-      </div>
+    <div class="section w3-animate-fading" id="class">
       <div class="btclass">
         <div class="class1">
           <p class="content">
@@ -74,12 +68,12 @@ if($value=="na"){
             We're here to help you achieve your full potential and succeed in your academic pursuits. So, are you ready to take the first step on your learning journey? Let's get started!
           </p>
         </div>
-        <div class="button-r">
+        <div class="button">
           <a href="#"><button class="button">Take Class</button></a>
         </div>
       </div>
     </div>
-    <div class="section" id="chat">
+    <div class="section w3-animate-fading" id="chat">
       <div class="btchat">
         <div class="chat1">
           <p class="content">
@@ -93,14 +87,9 @@ if($value=="na"){
           <a href="#"><button class="button">Chat</button></a>
         </div>
       </div>
-      <div class="image-1">
-        <img src="../images/chat.png" width="550" height="250" />
-      </div>
+
     </div>
-    <div class="section" id="quiz">
-      <div class="image-2">
-        <img src="../images/quiz.jpg" height="400" width="680" />
-      </div>
+    <div class="section w3-animate-fading" id="quiz">
       <div class="btquiz">
         <div class="quiz1">
           <p class="content">
@@ -113,12 +102,12 @@ if($value=="na"){
             And don't forget to have fun while testing your knowledge.
           </p>
         </div>
-        <div class="button-r">
+        <div class="button">
           <a href="#"><button class="button">Take Quiz</button></a>
         </div>
       </div>
     </div>
-    <div class="section" id="materials">
+    <div class="section w3-animate-fading" id="materials">
       <div class="btmaterial">
         <div class="material1">
           <p class="content">
@@ -132,9 +121,23 @@ if($value=="na"){
           <a href="materials.php"><button class="button">Download Materials</button></a>
         </div>
       </div>
-      <div class="image-1">
-        <img src="../images/book.jpg" width="700" height="400" />
-      </div>
     </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("section");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 9000);    
+      }
+    </script>
   </body>
 </html>

@@ -22,7 +22,6 @@ if($value=="na"){
     
     <ul>
       <li><a class="active" href="#home">Home</a></li>
-      <!-- <li><a href="studentprofile.php">Profile</a></li> -->
       <li><a href="createcourse.php">Courses</a></li>
       <li><a href="#about">Classes</a></li>
       <li><a href="#about">Chat</a></li>
@@ -31,7 +30,7 @@ if($value=="na"){
       <li style="float:right; "><a href="../student/logout.php" class="logout">Logout</a></li>
     </ul>
 
-    <div class="section" id="course">
+    <div class="section w3-animate-fading" id="course">
       <div class="btcourse">
         <div class="course1">
           <p class="content">
@@ -52,14 +51,8 @@ if($value=="na"){
           <a href="createcourse.php"><button class="button">Create Course</button></a>
         </div>
       </div>
-      <div class="image-1">
-        <img src="../images/class.jpg" width="650" height="380" />
-      </div>
     </div>
-    <div class="section" id="class">
-      <div class="image-1">
-        <img src="../images/course.png" height="400" width="680" />
-      </div>
+    <div class="section section w3-animate-fading" id="class">
       <div class="btclass">
         <div class="class1">
           <p class="content">
@@ -74,12 +67,12 @@ if($value=="na"){
           that our "Start a Class" option will help you achieve your goals.
           </p>
         </div>
-        <div class="button-r">
+        <div class="button">
           <a href="#"><button class="button">Start Class</button></a>
         </div>
       </div>
     </div>
-    <div class="section" id="chat">
+    <div class="section section w3-animate-fading" id="chat">
       <div class="btchat">
         <div class="chat1">
           <p class="content">
@@ -98,14 +91,8 @@ if($value=="na"){
           <a href="#"><button class="button">Chat</button></a>
         </div>
       </div>
-      <div class="image-1">
-        <img src="../images/chat.png" width="550" height="250" />
-      </div>
     </div>
-    <div class="section" id="quiz">
-      <div class="image2">
-        <img src="../images/quiz.jpg" height="400" width="680" />
-      </div>
+    <div class="section section w3-animate-fading" id="quiz">
       <div class="btquiz">
         <div class="quiz1">
           <p class="content">
@@ -121,12 +108,12 @@ if($value=="na"){
           enhancing your tutoring sessions and helping your students succeed.
           </p>
         </div>
-        <div class="button-r">
+        <div class="button">
           <a href="#"><button class="button">Start Quiz</button></a>
         </div>
       </div>
     </div>
-    <div class="section" id="materials">
+    <div class="section section w3-animate-fading" id="materials">
       <div class="btmaterial">
         <div class="material1">
           <p class="content">
@@ -144,9 +131,22 @@ if($value=="na"){
           <a href="fileupload.php"><button class="button">Upload Materials</button></a>
         </div>
       </div>
-      <div class="image1">
-        <img src="../images/book.jpg" width="700" height="400" />
-      </div>
     </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("section");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 9000);    
+      }
+    </script>
   </body>
 </html>
