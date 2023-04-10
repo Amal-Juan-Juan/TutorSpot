@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+  }
+  body {
+    background-color: #454545;
+    margin: 0;
+  }
+    .section {
+      padding: 2em 2em;
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #645F5F;
+      color: white;
+      
+    } 
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 18px 18px;
+      text-decoration: none;
+      
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #4545459a;
+      transition: background-color 0.3s;
+      color: #4FFFCA;
+      border-radius: 6px;
+    }
+  
+    
+    .active {
+      background-color: #454545;
+      color: white;
+    }
+    
+    .content {
+      text-align: justify;
+    }
+  
+    h1{
+      color: #4FFFCA;
+      text-align: center;
+      font-size: x-large;
+    }
+  
+  .section {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* .formdiv {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #4FFFCA;
+    background-color: #383a39;
+    color: white;
+  } */
+  
+  input[type=text] {
+     width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #645f5fa7;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #645f5f8e;
+    color: white;
+  }
+  
+  .action-button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #454545;
+   border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #4FFFCA;
+    transition: background-color 0.2s;
+    border-radius: 6px;
+  }
+  
+  .action-button:hover {
+  background-color: #2868c783;
+    transition: background-color 0.2s;
+  }
+  
+  .card-form {
+    background-color: #383a39;
+    padding: 20px;
+    border: 1px solid #4FFFCA;
+  }
+  
+  .whole {
+    width: 70%;
+    margin: auto;
+    padding: 5em;
+    color: white;
+  }
+  
