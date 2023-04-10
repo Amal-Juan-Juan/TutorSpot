@@ -40,6 +40,10 @@ session_start();
                       
                       <input type="text" onkeypress="myfun()"  class="input-field" placeholder="Tutor ID" reqiured="" name="tutorid" id="tutorid">
                   </div>
+                  <div class="input">
+                      
+                      <input type="text" onkeypress="myfun()"  class="input-field" placeholder="Tutor Email" reqiured="" name="email" id="email">
+                  </div>
               
               <div>
                 <p  id="file_name"></p>
