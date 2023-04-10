@@ -78,8 +78,8 @@ if(isset($_POST['btn-course']))
   $tutorname=$_POST['tutorname'];
   $duration=$_POST['duration'];
   $tutorid=$_POST['tutorid'];
-  
-  $query="insert into courses values('$coursename','$tutorname','$duration','$tutorid');";
+  $tutormail=$_POST['email'];
+  $query="insert into courses values('$coursename','$tutorname','$duration','$tutorid','$tutormail');";
   $result1=mysqli_query($con,$query);
   if($result1)
   {
