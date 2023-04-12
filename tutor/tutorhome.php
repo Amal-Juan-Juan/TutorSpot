@@ -24,7 +24,7 @@ if($value=="na"){
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="createcourse.php">Courses</a></li>
       <li><a href="#about">Classes</a></li>
-      <li><a href="#about">Chat</a></li>
+      <!-- <li><a href="#about">Chat</a></li> -->
       <li><a href="#about">Quiz</a></li>
       <li><a href="fileupload.php">Materials</a></li>
       <li><a href="details.php">Details</a></li>
@@ -73,7 +73,7 @@ if($value=="na"){
         </div>
       </div>
     </div>
-    <div class="section section w3-animate-fading" id="chat">
+    <!-- <div class="section section w3-animate-fading" id="chat">
       <div class="btchat">
         <div class="chat1">
           <p class="content">
@@ -92,7 +92,7 @@ if($value=="na"){
           <a href="#"><button class="button">Chat</button></a>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="section section w3-animate-fading" id="quiz">
       <div class="btquiz">
         <div class="quiz1">
