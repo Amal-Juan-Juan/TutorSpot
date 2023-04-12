@@ -32,5 +32,39 @@ session_start();
 				<input style="font-size: 1.5em" id="subm" type="submit" name="submit" value="View">
       </form>
     </div>
+    
+<?php
+$host = "localhost";  
+$user = "root";  
+$password = '';  
+$db_name = "TutorSpot";  
+  
+$con = mysqli_connect($host, $user, $password, $db_name);  
+if(mysqli_connect_errno()) {  
+    die("Failed to connect with MySQL: ". mysqli_connect_error());  
+}   
+if(isset($_POST['submit']))
+{
+  $tutorname=$_SESSION['username'];
+  $tutorid=$_POST['tutorid'];
+  $coursename=$_POST['coursename'];
+  
+
+  $query="select coursereg.username,coursereg.email,studentdetails.name,studentdetails.age,studentdetails.gender,studentdetails.phone, studentdetails.yearOfStudy,studentdetails.location,studentdetails.university from coursereg inner join studentdetails on coursereg.email=studentdetails.email where coursereg.coursename='$coursename' and coursereg.tutorid='$tutorid';";
+  $result1=mysqli_query($con,$query);
+  $count=mysqli_num_rows($result1);
+  if($count>0)
+  {
+    
+        
+  }
+  else {
+    echo '<script type="text/javascript">
+                    alert("Entered Wrong Details or No Student Enrolled");
+            
+            </script>'; 
+  }
+}
+?>
 </body>
 </html>
