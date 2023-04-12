@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+
+      script.addEventListener("load", function (event) {
+        const meeting = new VideoSDKMeeting();
+
+        const config = {
+          name: "Vinita Vaswani",
+          apiKey: "07da29fa-9b8b-4b15-82d1-c02f4780f447",
+          meetingId: "EDTECH_DEMO",
+          screenShareEnabled: true,
+          redirectOnLeave: "http://localhost/student/home.php",
+          chatEnabled: true,
+          raiseHandEnabled: true,
+          micEnabled: true,
+          webcamEnabled: true,
+          participantCanToggleSelfWebcam: true,
+          participantCanToggleSelfMic: true,
+          theme: "DARK", // DARK || LIGHT || DEFAULT
+          joinScreen: {
+            visible: true, // Show the join screen ?
+            title: "Doubt solving session", // Meeting title
+            meetingUrl: window.location.href, // Meeting joining url
+          },
+          whiteboardEnabled: true,
+          permissions: {
+            pin: true,
+            drawOnWhiteboard: false,
+
+            toggleWhiteboard: true,
+          },
+        };
+
+        meeting.init(config);
+      });
+
+      script.src =
+        "https://sdk.videosdk.live/rtc-js-prebuilt/0.3.23/rtc-js-prebuilt.js";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    </script>
+  </body>
+</html>

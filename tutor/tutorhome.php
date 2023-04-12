@@ -23,7 +23,7 @@ if($value=="na"){
     <ul>
       <li><a class="active" href="#home">Home</a></li>
       <li><a href="createcourse.php">Courses</a></li>
-      <li><a href="#about">Classes</a></li>
+      <li><a href="dash.php">Meetings</a></li>
       <!-- <li><a href="#about">Chat</a></li> -->
       <li><a href="#about">Quiz</a></li>
       <li><a href="fileupload.php">Materials</a></li>
