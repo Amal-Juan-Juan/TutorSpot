@@ -80,7 +80,7 @@ $host = "localhost";
             </tr>
             <!-- <tr>
                 <td>NGO:</td>
-                <!-- <td></td> -->
+                 <td></td> 
             </tr> -->
         </table>
 </div>
