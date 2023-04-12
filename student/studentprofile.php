@@ -35,7 +35,7 @@ $host = "localhost";
         <h1 class="profile-heading">Profile Details</h1>
         <table class="profile">
             <tr>
-                <td>Name :  <?php echo $row['username']?> </td>
+                <td>UserName :  <?php echo $row['username']?> </td>
                 <!-- <td></td> -->
             </tr>
             <tr>
@@ -45,10 +45,43 @@ $host = "localhost";
                 <td>E-Mail :  <?php echo $row['email']?></td>
                 <!-- <td></td> -->
             </tr>
-            <tr>
-                <td>NGO:</td>
+            <?php
+                $sql = "select *from studentdetails where email = '$email'";  
+                $result = mysqli_query($con, $sql);  
+                $row = mysqli_fetch_array($result, MYSQLI_ASSOC); 
+            ?>
+            </tr>
+                <td>Name :  <?php echo $row['name']?></td>
                 <!-- <td></td> -->
             </tr>
+            </tr>
+                <td>Age :  <?php echo $row['age']?></td>
+                <!-- <td></td> -->
+            </tr>
+            </tr>
+                <td>Gender :  <?php echo $row['gender']?></td>
+                <!-- <td></td> -->
+            </tr>
+            </tr>
+                <td>Phone :  <?php echo $row['phone']?></td>
+                <!-- <td></td> -->
+            </tr>
+            </tr>
+                <td>Year Of Study :  <?php echo $row['yearOfStudy']?></td>
+                <!-- <td></td> -->
+            </tr>
+            </tr>
+                <td>Location :  <?php echo $row['location']?></td>
+                <!-- <td></td> -->
+            </tr>
+            </tr>
+                <td>University :  <?php echo $row['university']?></td>
+                <!-- <td></td> -->
+            </tr>
+            <!-- <tr>
+                <td>NGO:</td>
+                <!-- <td></td> -->
+            </tr> -->
         </table>
 </div>
 <div class="section">
