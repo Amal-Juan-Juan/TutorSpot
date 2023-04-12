@@ -36,7 +36,7 @@
         </div>
         <?php
             // Connect to MySQL database
-            $conn = mysqli_connect("localhost", "root", "", "ngo");
+            $conn = mysqli_connect("localhost", "root", "", "tutorspot");
 
 // Check connection
             if (!$conn) {
@@ -48,7 +48,7 @@
 
 // SQL query to fetch data for the given email
             $sql = "SELECT name,email,phone FROM mentors WHERE org_email = '$org_email'";
-            $sql1 = "SELECT status FROM registration WHERE email = '$org_email'";
+            $sql1 = "SELECT status FROM ngo_registration WHERE email = '$org_email'";
 
 // Execute query
             $result = mysqli_query($conn, $sql);

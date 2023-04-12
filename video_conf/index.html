@@ -18,9 +18,10 @@
           name: "Vinita Vaswani",
           apiKey: "07da29fa-9b8b-4b15-82d1-c02f4780f447",
           meetingId: "EDTECH_DEMO",
-
+          screenShareEnabled: true,
           // redirectOnLeave: "http://localhost/TARP/login/",
-
+          chatEnabled: true,
+          raiseHandEnabled: true,
           micEnabled: true,
           webcamEnabled: true,
           participantCanToggleSelfWebcam: true,
@@ -36,10 +37,10 @@
             // ...
             drawOnWhiteboard: true,
             toggleWhiteboard: true,
-          },
-          permissions: {
-            //  ...other permissions
+            pin: true,
+            removeParticipant: true,
             canCreatePoll: true,
+            endMeeting: true,
           },
         };
 

@@ -24,7 +24,7 @@
                 <li><a href="index.html">GET COURSES</a></li>
                 <li><a href="index.html">POST CONTENT</a></li>
                 <li><a href="../video_conf/index.html" target="_blank">MEETING ROOM</a></li>
-                <li><a href="../NGO/register.html">NGO</a></li>
+                <li><a href="../NGO/register.html" target="_blank">NGO</a></li>
                 <li><a href="index.html">ABOUT US</a></li>
 
             </ul>
