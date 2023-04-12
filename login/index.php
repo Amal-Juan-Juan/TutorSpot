@@ -24,7 +24,13 @@
                 <li><a href="index.html">GET COURSES</a></li>
                 <li><a href="index.html">POST CONTENT</a></li>
                 <li><a href="../video_conf/index.html" target="_blank">MEETING ROOM</a></li>
+<<<<<<< HEAD
                 <li><a href="../NGO/register.html" target="_blank">NGO</a></li>
+=======
+                <li><a href="../NGO/register.html">NGO</a></li>
+                <li><a href="../Quiz/index.php" target="_blank">Quiz for Student</a></li>
+                <li><a href="../Quiz/adminpanel/admin/index.php" target="_blank">Quiz by Tutor</a></li>
+>>>>>>> 55fe710a220203015449090e3cc8612c56bd2db9
                 <li><a href="index.html">ABOUT US</a></li>
 
             </ul>

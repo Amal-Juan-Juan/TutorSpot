@@ -44,7 +44,7 @@ session_start();
                 button: "Ok",
                 timer: 5000
             }).then(function(){
-                window.location="index.php";
+                window.location="indext.php";
             });
         });
     </script>';

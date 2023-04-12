@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2023 at 05:29 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Apr 12, 2023 at 06:18 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -44,7 +44,8 @@ INSERT INTO `coursereg` (`coursename`, `username`, `tutorname`, `tutorid`, `emai
 ('ISM', 'abc', 'Selvi', 5001, 'abc@gmail.com'),
 ('PDC', 'axcz', 'Prasanth', 3001, 'qwhj@asdj'),
 ('Software Engineering', 'qwerty', 'Shiva', 2001, 'qwerty@gamil.com'),
-('PDC', 'qwerty', 'Prasanth', 3001, 'qwerty@gamil.com');
+('PDC', 'qwerty', 'Prasanth', 3001, 'qwerty@gamil.com'),
+('ISM', 'abc', 'Aadharsh', 1001, 'abc@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -56,20 +57,17 @@ CREATE TABLE `courses` (
   `coursename` varchar(30) NOT NULL,
   `tutorname` varchar(30) NOT NULL,
   `duration` varchar(11) NOT NULL,
-  `tutorid` int(10) NOT NULL
+  `tutorid` int(10) NOT NULL,
+  `tutormail` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `courses`
 --
 
-INSERT INTO `courses` (`coursename`, `tutorname`, `duration`, `tutorid`) VALUES
-('Software Engineering', 'Shiva', '30Hr', 2001),
-('Microprocessor', 'Gautham', '30Hr', 1001),
-('PDC', 'Prasanth', '30Hr', 3001),
-('ISM', 'Selvi', '20Hr', 5001),
-('ISM', 'Selvi', '20Hr', 40003),
-('ISM', 'Selvi', '20Hr', 40003);
+INSERT INTO `courses` (`coursename`, `tutorname`, `duration`, `tutorid`, `tutormail`) VALUES
+('ISM', 'Aadharsh', '20Hr', 1001, 'alappattsaadharsh@gmail.com'),
+('LSM', 'Aadharsh', '20Hr', 1001, 'alappattsaadharsh@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -150,7 +148,8 @@ CREATE TABLE `materials` (
 INSERT INTO `materials` (`coursename`, `tutorname`, `filename`, `tutorid`) VALUES
 ('Microprocessor', 'Gautham', 'MICRO.pdf', 1001),
 ('PDC', 'Prasanth', 'PDC.pdf', 3001),
-('ISM', 'Selvi', '20BCE0562 SPANISH.pdf', 40003);
+('ISM', 'Selvi', '20BCE0562 SPANISH.pdf', 40003),
+('LSM', 'Aadharsh', 'ISM PROJECT.pdf', 1001);
 
 -- --------------------------------------------------------
 
