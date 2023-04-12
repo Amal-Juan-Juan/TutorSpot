@@ -113,3 +113,24 @@ background-color: #2868c765;
 
 
   
+table{
+  align-content: left;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  width:95%;
+  color:white;
+  
+}
+
+td {
+border: none;
+padding: 8px;
+text-align: center;
+}
+#header{
+  text-align: center;
+  background-color: #645F5F;
+}
