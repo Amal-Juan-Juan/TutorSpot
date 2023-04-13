@@ -53,7 +53,7 @@
                         <input type="email" placeholder="Email" required name="email"/>
                         <input type="password" placeholder="Password" name="password" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$"/>
                         <a href="../login/index.php" id="tt">Sign in as Student</a>
-                        <a href="../login/index.php" id="fp">Forgot your password?</a>
+                        <a href="../tutorin/index.php" id="fp">Forgot your password?</a>
                         <button>Sign In</button>
                     </form>
                 </div>
