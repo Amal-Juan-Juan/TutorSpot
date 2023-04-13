@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 13, 2023 at 05:12 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Apr 13, 2023 at 07:08 AM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,6 +24,25 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `admin_acc`
+--
+
+CREATE TABLE `admin_acc` (
+  `admin_id` int(11) NOT NULL,
+  `admin_user` varchar(1000) NOT NULL,
+  `admin_pass` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin_acc`
+--
+
+INSERT INTO `admin_acc` (`admin_id`, `admin_user`, `admin_pass`) VALUES
+(1, 'ram_singh@gmail.com', 'ramsingh');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `coursereg`
 --
 
@@ -33,7 +52,7 @@ CREATE TABLE `coursereg` (
   `tutorname` varchar(30) NOT NULL,
   `tutorid` int(10) NOT NULL,
   `email` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `coursereg`
@@ -59,7 +78,7 @@ CREATE TABLE `courses` (
   `tutorname` varchar(30) NOT NULL,
   `duration` varchar(11) NOT NULL,
   `tutorid` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `courses`
@@ -73,270 +92,6 @@ INSERT INTO `courses` (`coursename`, `tutorname`, `duration`, `tutorid`) VALUES
 ('ISM', 'Selvi', '20Hr', 40003),
 ('ISM', 'Selvi', '20Hr', 40003),
 ('JavaProgramming', '', '', 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `login`
---
-
-CREATE TABLE `login` (
-  `email` varchar(30) NOT NULL,
-  `username` varchar(30) NOT NULL,
-  `password` varchar(20) NOT NULL,
-  `completed` varchar(20) NOT NULL DEFAULT 'na',
-  `ngo` varchar(40) NOT NULL DEFAULT 'na'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `login`
---
-
-INSERT INTO `login` (`email`, `username`, `password`, `completed`, `ngo`) VALUES
-('aadharsh.s2020@vitstudent.ac.i', 'adf', '213', 'na', 'na'),
-('abc@gmail.com', 'abc', 'abc', 'completed', 'na'),
-('abcd@gmail.com', 'abcd', '123445', 'na', 'na'),
-('adkj@gka', 'sjkd', '1234', 'na', 'na'),
-('ads@gmail.com', 'adc', '12345', 'na', 'na'),
-('alappattsaadharsh@gmail.com', 'aads', '12334', 'na', 'na'),
-('anna@gmail.com', 'aNNa', 'anna123', 'completed', 'na'),
-('cuhhugkh@gmail.com', 'oonvq', 'L\\`gS$vAZl', 'na', 'Ayuda'),
-('dqnzsoyl@gmail.com', 'nlcnv', 'baG;NLpkC|', 'na', 'Ayuda'),
-('hhhgcitm@gmail.com', 'oqloc', 'tb\'5OGx!>O', 'na', 'Ayuda'),
-('iqneqvvo@gmail.com', 'fcsnv', '`k&G{sm/jN', 'na', 'Ayuda'),
-('ixumtaxe@gmail.com', 'mcigh', '%S%5QF~CxU', 'na', 'Ayuda'),
-('lipbacqf@gmail.com', 'ednep', '}38*)p)A+Y', 'na', 'Ayuda'),
-('lmnchizc@gmail.com', 'qeajh', '!^Ldv#1?z7', 'na', 'Ayuda'),
-('pwqougxj@gmail.com', 'orxmm', 'DiaSOF4oNr', 'na', 'Ayuda'),
-('tsmxjhzp@gmail.com', 'ucjoz', '\"oil.B&Y<*', 'na', 'Ayuda'),
-('tutor@gmail.com', 'newTutor', '123', 'na', 'na'),
-('vinita@gmail.com', 'vinita24', '12345', 'completed', 'na'),
-('womjvrhh@gmail.com', 'itovl', 'x7Y2z;Z*vw', 'na', 'Ayuda');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `logint`
---
-
-CREATE TABLE `logint` (
-  `email` varchar(30) NOT NULL,
-  `username` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL,
-  `completed` varchar(10) NOT NULL DEFAULT 'na',
-  `ngo` varchar(20) NOT NULL DEFAULT 'na'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `logint`
---
-
-INSERT INTO `logint` (`email`, `username`, `password`, `completed`, `ngo`) VALUES
-('aadharsh.s2020@vitstudent.ac.i', 'adc', '1234', 'na', 'na'),
-('alappattsaadharsh@gmail.com', 'Aadharsh', '1234', 'completed', 'na'),
-('qwe@gmail.com', 'qwe', '1234', 'completed', 'na'),
-('tutor@gmail.com', 'tutor', '123', 'completed', 'na');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `materials`
---
-
-CREATE TABLE `materials` (
-  `coursename` varchar(30) NOT NULL,
-  `tutorname` varchar(30) NOT NULL,
-  `filename` varchar(60) NOT NULL,
-  `tutorid` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `materials`
---
-
-INSERT INTO `materials` (`coursename`, `tutorname`, `filename`, `tutorid`) VALUES
-('Microprocessor', 'Gautham', 'MICRO.pdf', 1001),
-('PDC', 'Prasanth', 'PDC.pdf', 3001),
-('ISM', 'Selvi', '20BCE0562 SPANISH.pdf', 40003);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `meetings`
---
-
-CREATE TABLE `meetings` (
-  `temail` varchar(40) NOT NULL,
-  `tname` varchar(50) NOT NULL,
-  `code` varchar(50) NOT NULL,
-  `topic` varchar(200) NOT NULL,
-  `id` int(11) NOT NULL,
-  `sstart` date NOT NULL DEFAULT current_timestamp(),
-  `stime` time NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `meetings`
---
-
-INSERT INTO `meetings` (`temail`, `tname`, `code`, `topic`, `id`, `sstart`, `stime`) VALUES
-('alappattsaadharsh@gmail.com', 'Aadarsh', 'CSE2006', 'ALP for 8086', 17, '2023-04-15', '06:40:00'),
-('tutor@gmail.com', 'Anna', 'CSE2006', 'ALP for 8086', 18, '2023-04-27', '19:47:00');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `mentors`
---
-
-CREATE TABLE `mentors` (
-  `id` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `phone` varchar(255) NOT NULL,
-  `ORG_EMAIL` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Dumping data for table `mentors`
---
-
-INSERT INTO `mentors` (`id`, `name`, `email`, `phone`, `ORG_EMAIL`) VALUES
-(2, 'Gautham Shastry', 'gautham@gmail.com', '9886732571', 'hope@gmail.com'),
-(3, 'Narayan Prakash\r\n', 'narayan@yahoo.com', '6254819264', NULL),
-(4, 'Suma P', 'suma@gmail.com\r\n', '9834261827', NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `ngo_registration`
---
-
-CREATE TABLE `ngo_registration` (
-  `id` int(11) NOT NULL,
-  `ngo_name` varchar(50) NOT NULL,
-  `cord` varchar(50) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `phone` varchar(100) NOT NULL,
-  `no_stud` varchar(100) NOT NULL,
-  `age` varchar(100) NOT NULL,
-  `application` varchar(500) DEFAULT NULL,
-  `STATUS` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Dumping data for table `ngo_registration`
---
-
-INSERT INTO `ngo_registration` (`id`, `ngo_name`, `cord`, `email`, `phone`, `no_stud`, `age`, `application`, `STATUS`) VALUES
-(4, 'Hope Foundation', 'Bhavna Choudhury', 'hope@gmail.com', '8088885354', '12', '8', 'We would like to partner with tutorspot to educate our students and provide them opportunities for a bright futute!', 'Accepted'),
-(5, 'Anokha ', 'Amith', 'az@email.com', '8754672392', '20', '8', 'We want to educate or students.', NULL),
-(6, 'Light Foundation', 'Akshata ', 'y@email.com', '8088885354', '20', '8', 'jdjdk', NULL),
-(7, 'Heart Foundation', 'Shreya', 'agfh@gmail.com', '9823618462', '20', '12', 'We would love this opportunity to collaborate!', NULL),
-(8, 'kjvsbdk', 'akshata', 'annna@gmail.com', '8591121312', '20', '20', 'hvjhvj', NULL),
-(9, 'hope', 'Vinita Kishore Vaswani Rajpal', 'a@email.com', '8591121312', '12', '12', 'teggh', NULL);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `ngo_students`
---
-
-CREATE TABLE `ngo_students` (
-  `id` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `age` varchar(255) NOT NULL,
-  `class` varchar(100) NOT NULL,
-  `gender` varchar(100) NOT NULL,
-  `location` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Dumping data for table `ngo_students`
---
-
-INSERT INTO `ngo_students` (`id`, `name`, `age`, `class`, `gender`, `location`) VALUES
-(2, 'Dhathri B        ', '12', '5', 'Female', 'Vellore'),
-(4, 'ganga', '8', '4', 'Female', 'Bangalore'),
-(5, 'Chandra', '6', '3', 'Male', 'Kerala'),
-(6, 'sumukh', '7', '6', 'Male', 'Vellore'),
-(7, 'Ram', '12', '8', 'Male', 'Vellore'),
-(26, 'Sumana', '6', '3', 'Female', 'Vellore'),
-(30, '', '', '', '', ''),
-(31, 'Akshata ', '20', '2024', 'Female', 'Vellore');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `studentdetails`
---
-
-CREATE TABLE `studentdetails` (
-  `email` varchar(40) NOT NULL,
-  `name` varchar(30) NOT NULL,
-  `age` int(3) NOT NULL,
-  `gender` varchar(6) NOT NULL,
-  `phone` varchar(10) NOT NULL,
-  `yearOfStudy` varchar(4) NOT NULL,
-  `location` varchar(40) NOT NULL,
-  `university` varchar(300) NOT NULL,
-  `ngo` varchar(40) NOT NULL DEFAULT 'na'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `studentdetails`
---
-
-INSERT INTO `studentdetails` (`email`, `name`, `age`, `gender`, `phone`, `yearOfStudy`, `location`, `university`, `ngo`) VALUES
-('abc@gmail.com', 'Vinita Kishore Vaswani Rajpal', 20, 'female', '8591121312', '2024', 'Vellore', 'VIT', 'na'),
-('anna@gmail.com', 'Anna Jai Joseph', 20, 'female', '8591121312', '2024', 'Vellore', 'VIT', 'na'),
-('vinita@gmail.com', 'Vinita Kishore Vaswani Rajpal', 20, 'female', '8591121312', '2025', 'Mumbai', 'VIT', 'na');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tutordetails`
---
-
-CREATE TABLE `tutordetails` (
-  `email` varchar(30) NOT NULL,
-  `username` varchar(30) NOT NULL,
-  `age` int(10) NOT NULL,
-  `gender` varchar(10) NOT NULL,
-  `phone` varchar(20) NOT NULL,
-  `experience` int(10) NOT NULL,
-  `location` varchar(30) NOT NULL,
-  `university` varchar(40) NOT NULL,
-  `ngo` varchar(20) NOT NULL DEFAULT 'na'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `tutordetails`
---
-
-INSERT INTO `tutordetails` (`email`, `username`, `age`, `gender`, `phone`, `experience`, `location`, `university`, `ngo`) VALUES
-('alappattsaadharsh@gmail.com', 'Aadharsh', 20, 'male', '9994468003', 0, 'Coimbatore', 'VIT', 'na'),
-('alappattsaadharsh@gmail.com', 'Aadharsh', 20, 'male', '8591121312', 3, 'Mumbai', 'VJTI', 'na'),
-('qwe@gmail.com', 'qwe', 20, 'male', '6887', 0, 'Coimbatore', 'VIT', 'na');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `admin_acc`
---
-
-CREATE TABLE `admin_acc` (
-  `admin_id` int(11) NOT NULL,
-  `admin_user` varchar(1000) NOT NULL,
-  `admin_pass` varchar(1000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `admin_acc`
---
-
-INSERT INTO `admin_acc` (`admin_id`, `admin_user`, `admin_pass`) VALUES
-(1, 'ram_singh@gmail.com', 'ramsingh');
 
 -- --------------------------------------------------------
 
@@ -467,7 +222,10 @@ CREATE TABLE `exam_question_tbl` (
 INSERT INTO `exam_question_tbl` (`eqt_id`, `exam_id`, `exam_question`, `exam_ch1`, `exam_ch2`, `exam_ch3`, `exam_ch4`, `exam_answer`, `exam_status`) VALUES
 (31, 25, '1+2', '12', '2', '3', '4', '3', 'active'),
 (32, 25, '4/2', '2', '1.5', '1', '0', '2', 'active'),
-(33, 26, '1+2', '1', '2', '3', '4', '3', 'active');
+(33, 26, '1+2', '1', '2', '3', '4', '3', 'active'),
+(34, 27, 'Which of the following plots are often used for checking randomness in time series?', 'Autocausation', 'Autorank', 'Autocorrelation', 'None of the above', 'Autocorrelation', 'active'),
+(35, 27, 'Common use cases for data visualization include?', 'Politics', ' Sales and marketing', 'Healthcare', 'All of the above', 'All of the above', 'active'),
+(36, 27, 'Data can be visualized using?', 'graphs', 'charts', 'maps', 'All of the above', 'All of the above', 'active');
 
 -- --------------------------------------------------------
 
@@ -492,7 +250,8 @@ CREATE TABLE `exam_tbl` (
 INSERT INTO `exam_tbl` (`ex_id`, `cou_id`, `ex_title`, `ex_time_limit`, `ex_questlimit_display`, `ex_description`, `ex_created`) VALUES
 (24, 26, 'Quiz-1', '10', 5, 'aaa', '2023-04-02 06:11:39'),
 (25, 26, 'Sample Quiz', '20', 5, 'All the best', '2023-04-04 17:06:58'),
-(26, 26, 'demo quiz', '10', 3, 'atb', '2023-04-06 07:25:10');
+(26, 26, 'demo quiz', '10', 3, 'atb', '2023-04-06 07:25:10'),
+(27, 26, 'DEMO QUIZ MAIN', '20', 3, 'Attempt all the questions', '2023-04-13 05:04:07');
 
 -- --------------------------------------------------------
 
@@ -515,51 +274,254 @@ CREATE TABLE `feedbacks_tbl` (
 INSERT INTO `feedbacks_tbl` (`fb_id`, `exmne_id`, `fb_exmne_as`, `fb_feedbacks`, `fb_date`) VALUES
 (9, 8, 'Anonymous', 'dfsdf', 'January 05, 2020');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `email` varchar(30) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `completed` varchar(20) NOT NULL DEFAULT 'na',
+  `ngo` varchar(40) NOT NULL DEFAULT 'na'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`email`, `username`, `password`, `completed`, `ngo`) VALUES
+('aadharsh.s2020@vitstudent.ac.i', 'adf', '213', 'na', 'na'),
+('abc@gmail.com', 'abc', 'abc', 'completed', 'na'),
+('abcd@gmail.com', 'abcd', '123445', 'na', 'na'),
+('adkj@gka', 'sjkd', '1234', 'na', 'na'),
+('ads@gmail.com', 'adc', '12345', 'na', 'na'),
+('alappattsaadharsh@gmail.com', 'aads', '12334', 'na', 'na'),
+('anna@gmail.com', 'aNNa', 'anna123', 'completed', 'na'),
+('cuhhugkh@gmail.com', 'oonvq', 'L\\`gS$vAZl', 'na', 'Ayuda'),
+('dqnzsoyl@gmail.com', 'nlcnv', 'baG;NLpkC|', 'na', 'Ayuda'),
+('hhhgcitm@gmail.com', 'oqloc', 'tb\'5OGx!>O', 'na', 'Ayuda'),
+('iqneqvvo@gmail.com', 'fcsnv', '`k&G{sm/jN', 'na', 'Ayuda'),
+('ixumtaxe@gmail.com', 'mcigh', '%S%5QF~CxU', 'na', 'Ayuda'),
+('lipbacqf@gmail.com', 'ednep', '}38*)p)A+Y', 'na', 'Ayuda'),
+('lmnchizc@gmail.com', 'qeajh', '!^Ldv#1?z7', 'na', 'Ayuda'),
+('pwqougxj@gmail.com', 'orxmm', 'DiaSOF4oNr', 'na', 'Ayuda'),
+('tsmxjhzp@gmail.com', 'ucjoz', '\"oil.B&Y<*', 'na', 'Ayuda'),
+('tutor@gmail.com', 'newTutor', '123', 'na', 'na'),
+('vinita@gmail.com', 'vinita24', '12345', 'completed', 'na'),
+('womjvrhh@gmail.com', 'itovl', 'x7Y2z;Z*vw', 'na', 'Ayuda');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `logint`
+--
+
+CREATE TABLE `logint` (
+  `email` varchar(30) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `completed` varchar(10) NOT NULL DEFAULT 'na',
+  `ngo` varchar(20) NOT NULL DEFAULT 'na'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `logint`
+--
+
+INSERT INTO `logint` (`email`, `username`, `password`, `completed`, `ngo`) VALUES
+('aadharsh.s2020@vitstudent.ac.i', 'adc', '1234', 'na', 'na'),
+('alappattsaadharsh@gmail.com', 'Aadharsh', '1234', 'completed', 'na'),
+('qwe@gmail.com', 'qwe', '1234', 'completed', 'na'),
+('tutor@gmail.com', 'tutor', '123', 'completed', 'na');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `materials`
+--
+
+CREATE TABLE `materials` (
+  `coursename` varchar(30) NOT NULL,
+  `tutorname` varchar(30) NOT NULL,
+  `filename` varchar(60) NOT NULL,
+  `tutorid` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `materials`
+--
+
+INSERT INTO `materials` (`coursename`, `tutorname`, `filename`, `tutorid`) VALUES
+('Microprocessor', 'Gautham', 'MICRO.pdf', 1001),
+('PDC', 'Prasanth', 'PDC.pdf', 3001),
+('ISM', 'Selvi', '20BCE0562 SPANISH.pdf', 40003);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `meetings`
+--
+
+CREATE TABLE `meetings` (
+  `temail` varchar(40) NOT NULL,
+  `tname` varchar(50) NOT NULL,
+  `code` varchar(50) NOT NULL,
+  `topic` varchar(200) NOT NULL,
+  `id` int(11) NOT NULL,
+  `sstart` date NOT NULL DEFAULT current_timestamp(),
+  `stime` time NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `meetings`
+--
+
+INSERT INTO `meetings` (`temail`, `tname`, `code`, `topic`, `id`, `sstart`, `stime`) VALUES
+('alappattsaadharsh@gmail.com', 'Aadarsh', 'CSE2006', 'ALP for 8086', 17, '2023-04-15', '06:40:00'),
+('tutor@gmail.com', 'Anna', 'CSE2006', 'ALP for 8086', 18, '2023-04-27', '19:47:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mentors`
+--
+
+CREATE TABLE `mentors` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(255) NOT NULL,
+  `ORG_EMAIL` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `mentors`
+--
+
+INSERT INTO `mentors` (`id`, `name`, `email`, `phone`, `ORG_EMAIL`) VALUES
+(2, 'Gautham Shastry', 'gautham@gmail.com', '9886732571', 'hope@gmail.com'),
+(3, 'Narayan Prakash\r\n', 'narayan@yahoo.com', '6254819264', NULL),
+(4, 'Suma P', 'suma@gmail.com\r\n', '9834261827', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ngo_registration`
+--
+
+CREATE TABLE `ngo_registration` (
+  `id` int(11) NOT NULL,
+  `ngo_name` varchar(50) NOT NULL,
+  `cord` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `no_stud` varchar(100) NOT NULL,
+  `age` varchar(100) NOT NULL,
+  `application` varchar(500) DEFAULT NULL,
+  `STATUS` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ngo_registration`
+--
+
+INSERT INTO `ngo_registration` (`id`, `ngo_name`, `cord`, `email`, `phone`, `no_stud`, `age`, `application`, `STATUS`) VALUES
+(4, 'Hope Foundation', 'Bhavna Choudhury', 'hope@gmail.com', '8088885354', '12', '8', 'We would like to partner with tutorspot to educate our students and provide them opportunities for a bright futute!', 'Accepted'),
+(5, 'Anokha ', 'Amith', 'az@email.com', '8754672392', '20', '8', 'We want to educate or students.', NULL),
+(6, 'Light Foundation', 'Akshata ', 'y@email.com', '8088885354', '20', '8', 'jdjdk', NULL),
+(7, 'Heart Foundation', 'Shreya', 'agfh@gmail.com', '9823618462', '20', '12', 'We would love this opportunity to collaborate!', NULL),
+(8, 'kjvsbdk', 'akshata', 'annna@gmail.com', '8591121312', '20', '20', 'hvjhvj', NULL),
+(9, 'hope', 'Vinita Kishore Vaswani Rajpal', 'a@email.com', '8591121312', '12', '12', 'teggh', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ngo_students`
+--
+
+CREATE TABLE `ngo_students` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `age` varchar(255) NOT NULL,
+  `class` varchar(100) NOT NULL,
+  `gender` varchar(100) NOT NULL,
+  `location` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ngo_students`
+--
+
+INSERT INTO `ngo_students` (`id`, `name`, `age`, `class`, `gender`, `location`) VALUES
+(2, 'Dhathri B        ', '12', '5', 'Female', 'Vellore'),
+(4, 'ganga', '8', '4', 'Female', 'Bangalore'),
+(5, 'Chandra', '6', '3', 'Male', 'Kerala'),
+(6, 'sumukh', '7', '6', 'Male', 'Vellore'),
+(7, 'Ram', '12', '8', 'Male', 'Vellore'),
+(26, 'Sumana', '6', '3', 'Female', 'Vellore'),
+(30, '', '', '', '', ''),
+(31, 'Akshata ', '20', '2024', 'Female', 'Vellore');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `studentdetails`
+--
+
+CREATE TABLE `studentdetails` (
+  `email` varchar(40) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `age` int(3) NOT NULL,
+  `gender` varchar(6) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `yearOfStudy` varchar(4) NOT NULL,
+  `location` varchar(40) NOT NULL,
+  `university` varchar(300) NOT NULL,
+  `ngo` varchar(40) NOT NULL DEFAULT 'na'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `studentdetails`
+--
+
+INSERT INTO `studentdetails` (`email`, `name`, `age`, `gender`, `phone`, `yearOfStudy`, `location`, `university`, `ngo`) VALUES
+('abc@gmail.com', 'Vinita Kishore Vaswani Rajpal', 20, 'female', '8591121312', '2024', 'Vellore', 'VIT', 'na'),
+('anna@gmail.com', 'Anna Jai Joseph', 20, 'female', '8591121312', '2024', 'Vellore', 'VIT', 'na'),
+('vinita@gmail.com', 'Vinita Kishore Vaswani Rajpal', 20, 'female', '8591121312', '2025', 'Mumbai', 'VIT', 'na');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tutordetails`
+--
+
+CREATE TABLE `tutordetails` (
+  `email` varchar(30) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `age` int(10) NOT NULL,
+  `gender` varchar(10) NOT NULL,
+  `phone` varchar(20) NOT NULL,
+  `experience` int(10) NOT NULL,
+  `location` varchar(30) NOT NULL,
+  `university` varchar(40) NOT NULL,
+  `ngo` varchar(20) NOT NULL DEFAULT 'na'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tutordetails`
+--
+
+INSERT INTO `tutordetails` (`email`, `username`, `age`, `gender`, `phone`, `experience`, `location`, `university`, `ngo`) VALUES
+('alappattsaadharsh@gmail.com', 'Aadharsh', 20, 'male', '9994468003', 0, 'Coimbatore', 'VIT', 'na'),
+('alappattsaadharsh@gmail.com', 'Aadharsh', 20, 'male', '8591121312', 3, 'Mumbai', 'VJTI', 'na'),
+('qwe@gmail.com', 'qwe', 20, 'male', '6887', 0, 'Coimbatore', 'VIT', 'na');
+
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `login`
---
-ALTER TABLE `login`
-  ADD PRIMARY KEY (`email`);
-
---
--- Indexes for table `logint`
---
-ALTER TABLE `logint`
-  ADD PRIMARY KEY (`email`);
-
---
--- Indexes for table `meetings`
---
-ALTER TABLE `meetings`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `mentors`
---
-ALTER TABLE `mentors`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `ngo_registration`
---
-ALTER TABLE `ngo_registration`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `ngo_students`
---
-ALTER TABLE `ngo_students`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `studentdetails`
---
-ALTER TABLE `studentdetails`
-  ADD PRIMARY KEY (`email`);
 
 --
 -- Indexes for table `admin_acc`
@@ -610,33 +572,50 @@ ALTER TABLE `feedbacks_tbl`
   ADD PRIMARY KEY (`fb_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- Indexes for table `login`
 --
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`email`);
 
 --
--- AUTO_INCREMENT for table `meetings`
+-- Indexes for table `logint`
+--
+ALTER TABLE `logint`
+  ADD PRIMARY KEY (`email`);
+
+--
+-- Indexes for table `meetings`
 --
 ALTER TABLE `meetings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for table `mentors`
+-- Indexes for table `mentors`
 --
 ALTER TABLE `mentors`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for table `ngo_registration`
+-- Indexes for table `ngo_registration`
 --
 ALTER TABLE `ngo_registration`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for table `ngo_students`
+-- Indexes for table `ngo_students`
 --
 ALTER TABLE `ngo_students`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
-COMMIT;
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `studentdetails`
+--
+ALTER TABLE `studentdetails`
+  ADD PRIMARY KEY (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
 
 --
 -- AUTO_INCREMENT for table `admin_acc`
@@ -672,19 +651,43 @@ ALTER TABLE `exam_attempt`
 -- AUTO_INCREMENT for table `exam_question_tbl`
 --
 ALTER TABLE `exam_question_tbl`
-  MODIFY `eqt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `eqt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `exam_tbl`
 --
 ALTER TABLE `exam_tbl`
-  MODIFY `ex_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `ex_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `feedbacks_tbl`
 --
 ALTER TABLE `feedbacks_tbl`
   MODIFY `fb_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `meetings`
+--
+ALTER TABLE `meetings`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT for table `mentors`
+--
+ALTER TABLE `mentors`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `ngo_registration`
+--
+ALTER TABLE `ngo_registration`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `ngo_students`
+--
+ALTER TABLE `ngo_students`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
