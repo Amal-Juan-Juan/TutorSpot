@@ -110,7 +110,7 @@ if($value=="na"){
           </p>
         </div>
         <div class="button">
-          <a href="#"><button class="button">Start Quiz</button></a>
+          <a href="../Quiz/adminpanel/admin/index.php" target="_blank"><button class="button">Create Quiz</button></a>
         </div>
       </div>
     </div>

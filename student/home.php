@@ -103,7 +103,7 @@ if($value=="na"){
           </p>
         </div>
         <div class="button">
-          <a href="#"><button class="button">Take Quiz</button></a>
+        <a href="../Quiz/index.php" target="_blank"><button class="button">Take Quiz</button></a>
         </div>
       </div>
     </div>

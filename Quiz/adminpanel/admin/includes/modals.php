@@ -103,6 +103,11 @@
           </div>
 
           <div class="form-group">
+            <label >Set Date:</label>
+            <input type="date" id="" name="quizDt" class="form-control">
+          </div>
+
+          <div class="form-group">
             <label>Question Limit to Display</label>
             <input type="number" name="examQuestDipLimit" id="" class="form-control" placeholder="Input question limit to display">
           </div>
@@ -114,7 +119,7 @@
 
           <div class="form-group">
             <label>Quiz Description</label>
-            <textarea name="examDesc" class="form-control" rows="4" placeholder="Input Quiz Description" required=""></textarea>
+            <textarea name="examDesc" class="form-control" rows="2" placeholder="Input Quiz Description" required=""></textarea>
           </div>
 
 
