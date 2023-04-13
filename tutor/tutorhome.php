@@ -25,7 +25,7 @@ if($value=="na"){
       <li><a href="createcourse.php">Courses</a></li>
       <li><a href="dash.php">Meetings</a></li>
       <!-- <li><a href="#about">Chat</a></li> -->
-      <li><a href="#about">Quiz</a></li>
+      <li><a href="../Quiz/adminpanel/admin/index.php" target="_blank">Quiz</a></li>
       <li><a href="fileupload.php">Materials</a></li>
       <li><a href="details.php">Details</a></li>
       <li style="float:right; "><a href="../student/logout.php" class="logout">Logout</a></li>
