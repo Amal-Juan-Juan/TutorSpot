@@ -55,7 +55,6 @@ $email=$_SESSION['email'];
 
                                     $currDate=date('Y-m-d');
                                     // echo $currDate;
-
             $sql="select * from meetings where sstart>'$currDate' or (sstart='$currDate' and  stime > '$currTime')";
                                     // Fetch data from the MySQL database
                                     // $sql = "SELECT * FROM meetings";
@@ -70,8 +69,40 @@ $email=$_SESSION['email'];
                                             echo "<td>" . $row['topic'] . "</td>";
                                             echo "<td>" . $row['sstart'] . "</td>";
                                             echo "<td>" . $row['stime'] . "</td>";
-                                            echo "<td><a href='indexstu.html' target='_blank'>Open Link</a></td>";
+                                            $date=$row['sstart'];
+                                            $time=$row['stime'];
+                                            $linkId = "myLink" . $row['id'];
+                                            echo "<td><a href='indexstu.html' target='_blank' id='$linkId'>Join Meeting</a></td>";
                                             echo "</tr>";
+                                            echo '<script type="text/javascript">
+                                            var now = new Date();
+                                    var retrievedDate = "'.$date.'";
+                                    var retrievedTime = "'.$time.'";
+    
+                                    var retrievedDateTime = retrievedDate + "T" + retrievedTime;
+                                    var retrievedDateTimeObj = new Date(retrievedDateTime);
+                                    var myLink = document.getElementById("'.$linkId.'");
+                                    
+                                    // Compare the retrieved date and time with the current date and time
+                                    if (now.getTime() >= retrievedDateTimeObj.getTime()) {
+                                        // If current date and time is greater than or equal to retrieved date and time,
+                                        // enable the link
+                                        myLink.setAttribute("href", "indexstu.html");
+                                    } else {
+                                        // If current date and time is less than retrieved date and time,
+                                        // disable the link and set a tooltip message
+                                        myLink.removeAttribute("href");
+                                        myLink.setAttribute("title", "Link is not active yet");
+                                    }
+                                    
+                                    // Add a hover event listener to display a tooltip message
+                                    myLink.addEventListener("mouseover", function() {
+                                        if (!this.hasAttribute("href")) {
+                                            this.setAttribute("title", "Link is not active yet");
+                                        }
+                                    });
+                                    </script>;';
+        
                                         }
                                     } else {
                                         echo "<tr><td colspan='5' class='text-center'>No meetings found.</td></tr>";
@@ -80,6 +111,7 @@ $email=$_SESSION['email'];
                                     // Close database connection
                                     mysqli_close($conn);
                                     ?>
+    
                                 </tbody>
                             </table>
                             <form method="post">
