@@ -2,7 +2,8 @@
 	$host = "localhost";
 	$user = "root";
 	$pass = "";
-	$db   = "quiz";
+	// $db   = "quiz";
+	$db = "TutorSpot";
 	$conn = null;
 
 	try {
